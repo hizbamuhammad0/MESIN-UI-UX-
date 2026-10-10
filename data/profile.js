@@ -207,12 +207,122 @@ window.PORTFOLIO_DATA = {
     {
       id: "proj-10",
       category: "media",
-      title: "Published Field Journalism — Harian Republika",
-      subtitle: "10 Verified Articles on Education, Economy & Social Affairs",
+      title: "Published Field Journalism — Harian Republika & RM.id",
+      subtitle: "10 Verified Investigative Articles & News Reports",
       metrics: "10 Published Reports • Republika Jogja & TV",
-      description: "Conducted field interviews, source verification, and published 10 articles in Harian Republika, covering regional economic relocation, educational conferences, and public affairs.",
+      description: "Conducted field interviews, verified sources, and published 10 official news reports covering regional socioeconomic relocation, higher education policies, cultural conferences, and humanitarian initiatives.",
+      image: "assets/images/journalism_republika.jpg",
+      tags: ["Journalism", "Field Reporting", "Published Media", "Fact-Checking"],
+      links: [
+        {
+          title: "Gelar Aksi Solidaritas Bela Palestina, Mahasiswa UII Sampaikan Lima Sikap Tegas",
+          publisher: "Republika Jogja",
+          type: "news",
+          url: "https://rejogja.republika.co.id/berita/sd9l57291/gelar-aksi-solidaritas-bela-palestina-mahasiswa-uii-sampaikan-lima-sikap-tegas"
+        },
+        {
+          title: "Sekolah Tanpa Gawai — Liputan Khusus Edukasi",
+          publisher: "Republika TV",
+          type: "video",
+          url: "https://tv.republika.co.id/berita/sev4nl313/sekolah-tanpa-gawai"
+        },
+        {
+          title: "Sebanyak 300 Mahasiswa di UGM Peroleh Edukasi untuk Merawat Rambut",
+          publisher: "Republika Jogja",
+          type: "news",
+          url: "https://rejogja.republika.co.id/berita/senxhf291/sebanyak-300-mahasiswa-di-ugm-peroleh-edukasi-untuk-merawat-rambut"
+        },
+        {
+          title: "UGM Jadi Tuan Rumah Konferensi Internasional AAS-in-Asia 2024",
+          publisher: "Republika Jogja",
+          type: "news",
+          url: "https://rejogja.republika.co.id/berita/sf28l7291/ugm-jadi-tuan-rumah-konferensi-internasional-aasinasia-2024"
+        },
+        {
+          title: "Dua Tahun Relokasi, PKL Malioboro Keluhkan Sepinya Pembeli",
+          publisher: "Republika Jogja",
+          type: "news",
+          url: "https://rejogja.republika.co.id/berita/s9p4k0291/dua-tahun-relokasi-pkl-malioboro-keluhkan-sepinya-pembeli"
+        },
+        {
+          title: "Guru Besar UII Suarakan Otoritarianisme Kampus Model Baru",
+          publisher: "Republika Jogja",
+          type: "news",
+          url: "https://rejogja.republika.co.id/berita/sfposp291/guru-besar-uii-suarakan-otoritarianisme-kampus-model-baru"
+        },
+        {
+          title: "Ratusan Warga Ikuti Haflah Ikhtitam Ponpes Afkaaruna",
+          publisher: "Republika Jogja",
+          type: "news",
+          url: "https://rejogja.republika.co.id/berita/s9i83d291/ratusan-warga-ikuti-haflah-ikhtitam-ponpes-afkaaruna"
+        },
+        {
+          title: "Kembali Hadir di Yogyakarta, Semesta Buku Dipadati Ratusan Pengunjung",
+          publisher: "Republika Jogja",
+          type: "news",
+          url: "https://rejogja.republika.co.id/berita/s9cbq8291/kembali-hadir-di-yogyakarta-semesta-buku-dipadati-ratusan-pengunjung"
+        },
+        {
+          title: "Bobby Ardiyanto Kembali Pimpin DPD GIPI DIY Masa Bakti 2024–2029",
+          publisher: "Republika Jogja",
+          type: "news",
+          url: "https://rejogja.republika.co.id/berita/sdvs6a291/bobby-ardiyanto-kembali-pimpin-dpd-gipi-diy-masa-bakti-20242029"
+        },
+        {
+          title: "Gelar Proyek Sosial di Dusun Boyong, Mahasiswa Amikom Kembangkan Potensi Masyarakat",
+          publisher: "RM.id",
+          type: "news",
+          url: "https://rm.id/baca-berita/life-style/205072/gelar-proyek-sosial-di-dusun-boyong-mahasiswa-universitas-amikom-yogyakarta-kembangkan-potensi-masyarakat"
+        }
+      ]
+    },
+    {
+      id: "proj-11",
+      category: "media",
+      title: "Commercial Film & Video Production",
+      subtitle: "Assistant Directing & Commercial Producing",
+      metrics: "Commercial Ads & Music Video • YouTube",
+      description: "Managed video shoot logistics, creative storytelling, talent directing, and client delivery for commercial products and narrative music videos broadcasted on YouTube.",
+      image: "assets/images/journalism_republika.jpg",
+      tags: ["Video Production", "Assistant Director", "Producer", "YouTube Works"],
+      links: [
+        {
+          title: "LANGIT SORE — Cinta Hanya Cerita Luka (Music Video)",
+          publisher: "YouTube (Assistant Director)",
+          type: "video",
+          url: "https://youtu.be/HlB_VhIKIqk?si=c_x-gqhtJpRT3iIo"
+        },
+        {
+          title: "DOKTER SUSU || Susu Sapi Segar (Commercial Ads)",
+          publisher: "YouTube (Producer)",
+          type: "video",
+          url: "https://youtu.be/XSVOtH2SstQ?si=n5FHeVIg9d0M2BiG"
+        },
+        {
+          title: "GEGABAH — Iklan Layanan Masyarakat",
+          publisher: "YouTube (Producer)",
+          type: "video",
+          url: "https://youtu.be/y-Snh3noCWc?si=gwSnsf3iDpfmrz9K"
+        }
+      ]
+    },
+    {
+      id: "proj-12",
+      category: "media",
+      title: "Academic Recognition — Best Graduate Award (Cum Laude)",
+      subtitle: "Department of Communication Science, Universitas Amikom Yogyakarta",
+      metrics: "GPA 3.81 • Best Graduate Honor Period 93",
+      description: "Conferred the Best Graduate Honor in the Department of Communication Science with a 3.81 Cumulative GPA. Celebrated for high-distinction coursework and published communication research.",
       image: "assets/images/sertifikat_bnsp.jpg",
-      tags: ["Journalism", "Field Research", "Published Media"]
+      tags: ["Academic Honor", "Best Graduate", "Communication Science", "Amikom"],
+      links: [
+        {
+          title: "Prestasi Gemilang: Inilah Wisudawan Terbaik Wisuda Periode 93 Universitas Amikom Yogyakarta",
+          publisher: "Blog Resmi Amikom",
+          type: "award",
+          url: "https://blog.amikom.ac.id/prestasi-gemilang-inilah-wisudawan-terbaik-wisuda-periode-93-universitas-amikom-yogyakarta/"
+        }
+      ]
     }
   ],
 
