@@ -310,6 +310,10 @@ function renderPortfolio(categories, projects) {
       <div class="portfolio-grid" id="portfolio-grid">
         <!-- Rendered via interactions.js -->
       </div>
+
+      <div id="portfolio-actions-slot">
+        <!-- Rendered via interactions.js -->
+      </div>
     </div>
   `;
 }

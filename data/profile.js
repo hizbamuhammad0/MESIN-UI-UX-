@@ -103,16 +103,18 @@ window.PORTFOLIO_DATA = {
 
   // 📁 3. SELECTED WORK (PROJECTS & CASE STUDIES)
   categories: [
-    { id: "all", label: "All Projects" },
+    { id: "featured", label: "★ Flagship Highlights (3)" },
     { id: "ads", label: "Paid Traffic & Growth" },
     { id: "cs", label: "Customer Operations" },
     { id: "design", label: "Commercial Design" },
-    { id: "media", label: "Media & Journalism" }
+    { id: "media", label: "Media & Journalism" },
+    { id: "all", label: "All Projects (10)" }
   ],
   projects: [
     {
       id: "proj-1",
       category: "ads",
+      featured: true,
       title: "Meta Ads Scaling — Herbal Health Products",
       subtitle: "Paid Traffic Acquisition & Budget Allocation",
       metrics: "3.5x – 5.0x ROAS • Budget Scaling",
@@ -123,6 +125,7 @@ window.PORTFOLIO_DATA = {
     {
       id: "proj-2",
       category: "ads",
+      featured: true,
       title: "Shopee Marketplace Scaling — Pusat Herbal Indonesia",
       subtitle: "Search Keyword Ads & Fast Chat Operations",
       metrics: "IDR 100M Revenue • 4.8/5.0 Rating",
@@ -153,6 +156,7 @@ window.PORTFOLIO_DATA = {
     {
       id: "proj-5",
       category: "cs",
+      featured: true,
       title: "Customer Service Team Supervision — CV Creaidea Innovation",
       subtitle: "Daily Lead Management & Closing Optimization",
       metrics: "87% Closing Rate • 25% Monthly Revenue Lift",

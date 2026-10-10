@@ -757,6 +757,38 @@
   font-weight: 600;
 }
 
+.flagship-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 10px;
+  background: var(--accent);
+  color: var(--text-invert);
+  border-radius: var(--radius-sm);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+
+.portfolio-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-2xl);
+}
+
+.portfolio-counter {
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: var(--space-sm);
+  font-weight: 500;
+}
+
 /* ==============================================================================
  * 🛠️ 9. CORE COMPETENCIES (SKILLS & TOOLS)
  * ============================================================================== */
