@@ -1,8 +1,9 @@
 /**
  * ==============================================================================
- * ⚙️ UI/UX RENDERING ENGINE (PLUG & PLAY CORE)
+ * ⚙️ UI/UX RENDERING ENGINE (PLUG & PLAY CORE WITH MULTI-STYLE SUPPORT)
  * ==============================================================================
  * Membaca window.PORTFOLIO_DATA dan membangun seluruh antarmuka secara dinamis.
+ * Mendukung 5 Art Style terkurasi dengan peralihan instan.
  * ==============================================================================
  */
 
@@ -13,13 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // 1. Terapkan Tema & Warna Aksen
-  if (data.theme && data.theme.accent) {
-    document.documentElement.setAttribute('data-accent', data.theme.accent);
-  }
-  if (data.theme && data.theme.mode) {
-    document.documentElement.setAttribute('data-theme', data.theme.mode);
-  }
+  // 1. Terapkan Art Style & Warna Aksen
+  const initialStyle = data.theme?.style || 'tech-glossy';
+  const initialAccent = data.theme?.accent || 'cyan';
+  const initialMode = data.theme?.mode || 'dark';
+
+  document.documentElement.setAttribute('data-style', initialStyle);
+  document.documentElement.setAttribute('data-accent', initialAccent);
+  document.documentElement.setAttribute('data-theme', initialMode);
 
   // 2. Set Page Title & Meta
   if (data.personal && data.personal.name) {
@@ -40,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (data.sections?.experience && data.experience) renderExperience(data.experience);
   if (data.sections?.contact && data.contact) renderContact(data.contact);
 
-  // 6. Inisialisasi Floating Theme Switcher
-  initThemeSwitcher();
+  // 6. Inisialisasi Floating Style & Accent Switcher
+  initStyleAndThemeSwitcher(initialStyle, initialAccent);
 });
 
 function renderNavbar(data) {
@@ -258,31 +260,60 @@ function renderContact(contact) {
   `;
 }
 
-function initThemeSwitcher() {
+/**
+ * 🎛️ FLOATING STYLE & ACCENT SWITCHER BAR
+ * Memungkinkan pratinjau instan untuk 5 Art Style terkurasi
+ */
+function initStyleAndThemeSwitcher(currentStyle, currentAccent) {
   const switcher = document.createElement('div');
   switcher.className = 'theme-picker';
-  switcher.title = 'Ubah Warna Aksen Tema';
+  switcher.title = 'Ubah Preset Art Style & Aksen Warna';
+
+  const styles = [
+    { id: 'tech-glossy', label: 'Tech Glossy (Vercel)' },
+    { id: 'warm-editorial', label: 'Warm Editorial (Kinfolk)' },
+    { id: 'human-minimal', label: 'Human Minimal (Stripe)' },
+    { id: 'organic-earthy', label: 'Organic Earthy (Aesop)' },
+    { id: 'neo-heritage', label: 'Neo Heritage (Lokal)' }
+  ];
 
   const accents = [
     { id: 'cyan', color: '#38bdf8' },
     { id: 'emerald', color: '#10b981' },
     { id: 'purple', color: '#a855f7' },
     { id: 'amber', color: '#f59e0b' },
-    { id: 'rose', color: '#f43f5e' }
+    { id: 'rose', color: '#f43f5e' },
+    { id: 'gold', color: '#d4af37' }
   ];
 
-  const current = document.documentElement.getAttribute('data-accent') || 'cyan';
+  const styleOptionsHtml = styles.map(s => `
+    <option value="${s.id}" ${s.id === currentStyle ? 'selected' : ''}>
+      ${s.label}
+    </option>
+  `).join('');
 
-  switcher.innerHTML = accents.map(a => `
-    <span class="theme-dot ${a.id === current ? 'active' : ''}" 
+  const accentDotsHtml = accents.map(a => `
+    <span class="theme-dot ${a.id === currentAccent ? 'active' : ''}" 
           style="background: ${a.color};" 
           onclick="setAccentColor('${a.id}', this)"
           title="Aksen ${a.id}">
     </span>
   `).join('');
 
+  switcher.innerHTML = `
+    <select class="style-select" onchange="setArtStyle(this.value)" title="Pilih Art Style">
+      ${styleOptionsHtml}
+    </select>
+    <div style="width: 1px; height: 18px; background: var(--border-medium); margin: 0 4px;"></div>
+    ${accentDotsHtml}
+  `;
+
   document.body.appendChild(switcher);
 }
+
+window.setArtStyle = function(styleId) {
+  document.documentElement.setAttribute('data-style', styleId);
+};
 
 window.setAccentColor = function(accentId, el) {
   document.documentElement.setAttribute('data-accent', accentId);

@@ -11,7 +11,7 @@
   z-index: 50;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  background-color: rgba(8, 10, 15, 0.75);
+  background-color: rgba(8, 10, 16, 0.75);
   border-bottom: 1px solid var(--border-subtle);
   transition: var(--transition-normal);
 }
@@ -136,7 +136,7 @@
   gap: var(--space-xs);
   padding: 6px 16px;
   border-radius: var(--radius-full);
-  background: rgba(56, 189, 248, 0.1);
+  background: var(--bg-glass);
   border: 1px solid var(--border-subtle);
   color: var(--accent);
   font-size: 0.82rem;
@@ -153,14 +153,14 @@
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
   font-weight: 800;
   margin-bottom: var(--space-xs);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
   color: var(--accent-light);
   font-weight: 500;
   margin-bottom: var(--space-md);
@@ -396,7 +396,7 @@
   bottom: 12px;
   left: 12px;
   padding: 4px 10px;
-  background: rgba(8, 10, 15, 0.85);
+  background: rgba(8, 10, 16, 0.85);
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-full);
@@ -542,7 +542,7 @@
 
 /* 📬 CONTACT CTA BOX */
 .cta-box {
-  background: linear-gradient(135deg, rgba(18, 24, 38, 0.9) 0%, rgba(26, 35, 54, 0.6) 100%);
+  background: var(--bg-card);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-xl);
   padding: var(--space-3xl) var(--space-xl);
@@ -628,21 +628,51 @@
   padding: var(--space-xl);
 }
 
-/* 🎨 THEME PICKER FLOATING BAR */
+.modal-title {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.modal-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* 🎨 THEME & STYLE PICKER FLOATING BAR */
 .theme-picker {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  background: rgba(18, 24, 38, 0.85);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--border-medium);
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-highlight);
   border-radius: var(--radius-full);
-  padding: 6px 12px;
+  padding: 6px 14px;
   display: flex;
   align-items: center;
   gap: 8px;
   z-index: 90;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.style-select {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.style-select option {
+  background: #0e131d;
+  color: #fff;
 }
 
 .theme-dot {
@@ -660,6 +690,15 @@
 
 .theme-dot.active {
   border-color: #fff;
+}
+
+/* ⚓ FOOTER */
+.footer-section {
+  text-align: center;
+  padding: 48px 24px;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }
 
 /* 📱 RESPONSIVE ADJUSTMENTS */

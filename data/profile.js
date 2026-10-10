@@ -8,11 +8,19 @@
  */
 
 window.PORTFOLIO_DATA = {
-  // 🎨 PENGATURAN TEMA & WARNA AKSEN
-  // Pilihan accent: "cyan" | "emerald" | "purple" | "amber" | "rose"
+  // 🎨 PENGATURAN TEMA & PRESET ART STYLE
   theme: {
+    // 🌟 5 PILIHAN ART STYLE PROFESIONAL TERKURASI:
+    // • "tech-glossy"    -> Modern Apple / Linear style (Dark mode, glass, glow accent)
+    // • "warm-editorial"  -> Majalah Intelektual Kinfolk/Substack (Serif, hangat, elegan)
+    // • "human-minimal"   -> Notion / Stripe Press (Bersih, ramah, cerdas, terstruktur)
+    // • "organic-earthy"  -> Skincare/Wellness Aesop (Palet alam, menenangkan, natural)
+    // • "neo-heritage"    -> Indonesian Culture Modern (Berwibawa, mewah, aksen gold)
+    style: "tech-glossy",
+
+    // Pilihan warna aksen: "cyan" | "emerald" | "purple" | "amber" | "rose" | "gold"
     accent: "cyan",
-    mode: "dark" // "dark" atau "light"
+    mode: "dark"
   },
 
   // 👤 INFORMASI PROFIL UTAMA

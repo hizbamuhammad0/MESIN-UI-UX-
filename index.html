@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="id" data-accent="cyan">
+<html lang="id" data-style="tech-glossy" data-accent="cyan">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portofolio Profesional & Profil Karir</title>
   <meta name="description" content="Portofolio profesional dan profil karir bertenaga sistem desain modular plug-and-play.">
   
-  <!-- 🔠 Typography: Google Fonts (Outfit & Plus Jakarta Sans) -->
+  <!-- 🔠 Typography: Google Fonts Multi-Style -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- 🎨 Stylesheets Modular -->
   <link rel="stylesheet" href="styles/tokens.css">
@@ -34,7 +34,7 @@
   </main>
 
   <!-- ⚓ Footer -->
-  <footer style="text-align: center; padding: 48px 24px; border-top: 1px solid var(--border-subtle); color: var(--text-muted); font-size: 0.85rem;">
+  <footer class="footer-section">
     <div class="container">
       <p>© <span id="current-year">2026</span> • Ditenagai oleh Sistem Desain Modular UI/UX</p>
     </div>
@@ -46,8 +46,8 @@
       <button class="modal-close-btn" onclick="closeLightbox()" title="Tutup Preview">✕</button>
       <img id="modal-img" src="" alt="Detail Preview" class="modal-img" />
       <div class="modal-body">
-        <h3 id="modal-title" style="margin-bottom: 8px; font-size: 1.3rem;"></h3>
-        <p id="modal-desc" style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);"></p>
+        <h3 id="modal-title" class="modal-title"></h3>
+        <p id="modal-desc" class="modal-desc"></p>
       </div>
     </div>
   </div>

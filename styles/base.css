@@ -24,11 +24,9 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
-  background-image: 
-    radial-gradient(circle at 15% 10%, var(--accent-glow) 0%, transparent 45%),
-    radial-gradient(circle at 85% 25%, rgba(168, 85, 247, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 50% 75%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+  background-image: var(--bg-gradient);
   background-attachment: fixed;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* 🖼️ Grid Container */
@@ -44,12 +42,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   color: var(--text-primary);
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  transition: color 0.3s ease;
 }
 
 p {
   color: var(--text-secondary);
+  transition: color 0.3s ease;
 }
 
 a {
