@@ -1,20 +1,20 @@
 /**
  * ==============================================================================
- * ⚙️ UI/UX RENDERING ENGINE (PLUG & PLAY CORE WITH MULTI-STYLE SUPPORT)
+ * ⚙️ UI/UX RENDERING ENGINE (PROFESSIONAL ENGLISH INTERFACE)
  * ==============================================================================
- * Membaca window.PORTFOLIO_DATA dan membangun seluruh antarmuka secara dinamis.
- * Mendukung 5 Art Style terkurasi dengan peralihan instan.
+ * Dynamically builds the DOM from window.PORTFOLIO_DATA.
+ * Clear, concise, and accessible professional interface.
  * ==============================================================================
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   const data = window.PORTFOLIO_DATA;
   if (!data) {
-    console.error('Data profil tidak ditemukan. Pastikan data/profile.js dimuat.');
+    console.error('Profile data not found. Ensure data/profile.js is loaded.');
     return;
   }
 
-  // 1. Terapkan Art Style & Warna Aksen
+  // 1. Apply Theme Style, Accent & Mode
   const initialStyle = data.theme?.style || 'tech-glossy';
   const initialAccent = data.theme?.accent || 'cyan';
   const initialMode = data.theme?.mode || 'dark';
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. Set Page Title & Meta
   if (data.personal && data.personal.name) {
-    document.title = `${data.personal.name} — ${data.personal.title || 'Portofolio Profesional'}`;
+    document.title = `${data.personal.name} — ${data.personal.title || 'Professional Portfolio'}`;
   }
 
   // 3. Render Navbar
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. Render Hero Section
   renderHero(data);
 
-  // 5. Render Sections Kondisional
+  // 5. Render Conditional Sections
   if (data.sections?.stats && data.stats) renderStats(data.stats);
   if (data.sections?.skills && data.skills) renderSkills(data.skills);
   if (data.sections?.portfolio && data.projects) renderPortfolio(data.categories, data.projects);
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (data.sections?.experience && data.experience) renderExperience(data.experience);
   if (data.sections?.contact && data.contact) renderContact(data.contact);
 
-  // 6. Inisialisasi Floating Style & Accent Switcher
+  // 6. Initialize Floating Style Switcher
   initStyleAndThemeSwitcher(initialStyle, initialAccent);
 });
 
@@ -57,14 +57,14 @@ function renderNavbar(data) {
         <span>${data.personal.name}</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#portfolio" class="nav-link">Portofolio</a></li>
-        <li><a href="#skills" class="nav-link">Keahlian</a></li>
-        <li><a href="#certifications" class="nav-link">Sertifikasi</a></li>
-        <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
       </ul>
       <div class="nav-actions">
-        ${data.personal.cvUrl ? `<a href="${data.personal.cvUrl}" target="_blank" class="btn btn-outline btn-sm">Unduh CV</a>` : ''}
-        <a href="#contact" class="btn btn-primary btn-sm">Kontak</a>
+        ${data.personal.cvUrl ? `<a href="${data.personal.cvUrl}" target="_blank" class="btn btn-outline btn-sm">Resume (PDF)</a>` : ''}
+        <a href="#contact" class="btn btn-primary btn-sm">Contact</a>
       </div>
     </div>
   `;
@@ -102,8 +102,8 @@ function renderHero(data) {
       <p class="hero-bio">${p.bio}</p>
 
       <div class="hero-actions">
-        <a href="#portfolio" class="btn btn-primary">Lihat Hasil Proyek</a>
-        ${p.cvUrl ? `<a href="${p.cvUrl}" target="_blank" class="btn btn-outline">Lihat Resume (PDF)</a>` : ''}
+        <a href="#portfolio" class="btn btn-primary">View Projects</a>
+        ${p.cvUrl ? `<a href="${p.cvUrl}" target="_blank" class="btn btn-outline">Download Resume (PDF)</a>` : ''}
       </div>
 
       <div class="hero-socials">
@@ -139,9 +139,9 @@ function renderSkills(skills) {
   slot.innerHTML = `
     <div class="container section" id="skills">
       <div class="section-header">
-        <span class="section-tag">Kompetensi Utama</span>
-        <h2 class="section-title">Keahlian & Tool Stack</h2>
-        <p>Spesialisasi teknis dan alur operasional kerja yang dikuasai secara profesional.</p>
+        <span class="section-tag">Core Competencies</span>
+        <h2 class="section-title">Skills & Tools</h2>
+        <p>Technical tools and operational capabilities used across paid traffic, customer service, and media production.</p>
       </div>
       <div class="skills-grid">
         ${skills.map(c => `
@@ -170,9 +170,9 @@ function renderPortfolio(categories, projects) {
   slot.innerHTML = `
     <div class="container section" id="portfolio">
       <div class="section-header">
-        <span class="section-tag">Portofolio Karya</span>
-        <h2 class="section-title">Proyek & Hasil Eksekusi</h2>
-        <p>Kumpulan studi kasus kampanye iklan, kepemimpinan tim, dan karya desain pilihan.</p>
+        <span class="section-tag">Selected Work</span>
+        <h2 class="section-title">Projects & Case Studies</h2>
+        <p>Verified outcomes across advertising campaigns, customer operations, and commercial graphic design.</p>
       </div>
 
       <div class="filter-tabs" id="portfolio-tabs">
@@ -193,9 +193,9 @@ function renderCertifications(certs) {
   slot.innerHTML = `
     <div class="container section" id="certifications">
       <div class="section-header">
-        <span class="section-tag">Kredensial Profesional</span>
-        <h2 class="section-title">Sertifikasi Kompetensi</h2>
-        <p>Bukti legalitas dan sertifikasi keahlian terstandarisasi lembaga resmi.</p>
+        <span class="section-tag">Verified Credentials</span>
+        <h2 class="section-title">Licenses & Certifications</h2>
+        <p>Official certifications verified by national competency boards and training institutions.</p>
       </div>
       <div class="cert-grid">
         ${certs.map(c => `
@@ -204,7 +204,7 @@ function renderCertifications(certs) {
             <div class="cert-info">
               <h4>${c.title}</h4>
               <p class="cert-issuer">${c.issuer} • ${c.year}</p>
-              <span class="btn btn-outline btn-sm" style="margin-top: 6px; padding: 3px 8px;">Lihat Dokumen ↗</span>
+              <span class="btn btn-outline btn-sm" style="margin-top: 6px; padding: 3px 8px;">View Document ↗</span>
             </div>
           </div>
         `).join('')}
@@ -220,8 +220,8 @@ function renderExperience(exp) {
   slot.innerHTML = `
     <div class="container section" id="experience">
       <div class="section-header">
-        <span class="section-tag">Rekam Jejak</span>
-        <h2 class="section-title">Pengalaman Kerja</h2>
+        <span class="section-tag">Career History</span>
+        <h2 class="section-title">Experience & Education</h2>
       </div>
       <div class="timeline">
         ${exp.map(e => `
@@ -252,7 +252,7 @@ function renderContact(contact) {
             ${contact.ctaText} ↗
           </a>
           <a href="mailto:${contact.email}" class="btn btn-outline" style="padding: 14px 28px; font-size: 1rem;">
-            Kirim Email
+            Send Email
           </a>
         </div>
       </div>
@@ -260,21 +260,17 @@ function renderContact(contact) {
   `;
 }
 
-/**
- * 🎛️ FLOATING STYLE & ACCENT SWITCHER BAR
- * Memungkinkan pratinjau instan untuk 5 Art Style terkurasi
- */
 function initStyleAndThemeSwitcher(currentStyle, currentAccent) {
   const switcher = document.createElement('div');
   switcher.className = 'theme-picker';
-  switcher.title = 'Ubah Preset Art Style & Aksen Warna';
+  switcher.title = 'Switch Visual Art Style & Accent Color';
 
   const styles = [
     { id: 'tech-glossy', label: 'Tech Glossy (Vercel)' },
     { id: 'warm-editorial', label: 'Warm Editorial (Kinfolk)' },
     { id: 'human-minimal', label: 'Human Minimal (Stripe)' },
     { id: 'organic-earthy', label: 'Organic Earthy (Aesop)' },
-    { id: 'neo-heritage', label: 'Neo Heritage (Lokal)' }
+    { id: 'neo-heritage', label: 'Neo Heritage (Cultural)' }
   ];
 
   const accents = [
@@ -296,12 +292,12 @@ function initStyleAndThemeSwitcher(currentStyle, currentAccent) {
     <span class="theme-dot ${a.id === currentAccent ? 'active' : ''}" 
           style="background: ${a.color};" 
           onclick="setAccentColor('${a.id}', this)"
-          title="Aksen ${a.id}">
+          title="${a.id} Accent">
     </span>
   `).join('');
 
   switcher.innerHTML = `
-    <select class="style-select" onchange="setArtStyle(this.value)" title="Pilih Art Style">
+    <select class="style-select" onchange="setArtStyle(this.value)" title="Choose Art Style">
       ${styleOptionsHtml}
     </select>
     <div style="width: 1px; height: 18px; background: var(--border-medium); margin: 0 4px;"></div>
