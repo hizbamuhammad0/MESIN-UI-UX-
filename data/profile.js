@@ -19,7 +19,7 @@ window.PORTFOLIO_DATA = {
     name: "Nessa Kamalika",
     title: "Growth & Performance Marketing",
     badge: "Available for Roles & Growth Consulting",
-    bio: "Growth & Performance Marketer focused on driving sustainable revenue growth through targeted paid advertising and end-to-end funnel execution. Experienced in scaling multi-channel campaigns across Meta, TikTok, and Marketplace Ads from the ground up, delivering IDR 600M–800M/month in revenue with consistent 3.5x–5.0x ROAS on ad budgets up to IDR 200M/month. Combines analytical campaign scaling with customer operations leadership to drive conversion rates and secure an exceptional closing rate of up to 87%.",
+    bio: "Growth & Performance Marketer focused on driving sustainable revenue growth through targeted paid advertising and end-to-end funnel execution. Experienced in scaling multi-channel campaigns across Meta, TikTok, and Marketplace Ads from the ground up, delivering IDR 600M–800M/month in revenue with consistent 3.5x–10.0x ROAS on ad budgets up to IDR 200M/month. Combines analytical campaign scaling with customer operations leadership to drive conversion rates and secure an exceptional closing rate of up to 87%.",
     location: "Yogyakarta, Indonesia",
     avatar: "assets/images/avatar.png",
     cvUrl: "assets/docs/cv.pdf",
@@ -43,7 +43,7 @@ window.PORTFOLIO_DATA = {
   // 📊 KEY PERFORMANCE METRICS
   stats: [
     { label: "Monthly Revenue Delivered", value: "IDR 600M–800M", desc: "Multi-channel store scaling" },
-    { label: "Consistent Ad ROAS", value: "3.5x – 5.0x", desc: "On ad budgets up to IDR 200M/month" },
+    { label: "Consistent Ad ROAS", value: "3.5x – 10.0x", desc: "On ad budgets up to IDR 200M/month" },
     { label: "Peak Closing Rate", value: "87%", desc: "Customer operations leadership" },
     { label: "National Competency", value: "BNSP Licensed", desc: "Digital Marketing (Valid to 2027)" }
   ],
@@ -108,7 +108,7 @@ window.PORTFOLIO_DATA = {
     { id: "cs", label: "Customer Operations" },
     { id: "design", label: "Commercial Design" },
     { id: "media", label: "Media & Journalism" },
-    { id: "all", label: "All Projects (10)" }
+    { id: "all", label: "All Projects (12)" }
   ],
   projects: [
     {
@@ -117,7 +117,7 @@ window.PORTFOLIO_DATA = {
       featured: true,
       title: "Meta Ads Scaling — Herbal Health Products",
       subtitle: "Paid Traffic Acquisition & Budget Allocation",
-      metrics: "3.5x – 5.0x ROAS • Budget Scaling",
+      metrics: "3.5x – 10.0x ROAS • Budget Scaling",
       description: "Restructured ad campaigns across creative variations, custom lookalikes, and broad demographic targeting to scale revenue while maintaining stable acquisition margins.",
       image: "assets/images/ads_meta_1.jpeg",
       tags: ["Meta Ads", "ROAS", "Performance Marketing"]

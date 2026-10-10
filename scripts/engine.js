@@ -162,7 +162,7 @@ function renderHero(data) {
           <div class="hero-avatar-card">
             <img src="${p.avatar || 'assets/images/avatar.png'}" alt="${p.name}">
           </div>
-          <div class="pop-tag-float pop-tag-1">📈 3.5x–5.0x ROAS Multi-Channel</div>
+          <div class="pop-tag-float pop-tag-1">📈 3.5x–10.0x ROAS Multi-Channel</div>
           <div class="pop-tag-float pop-tag-2">🎯 87% Sales Closing Rate</div>
           <div class="pop-tag-float pop-tag-3">🏆 BNSP Licensed Digital Marketer</div>
         </div>
@@ -368,11 +368,11 @@ function renderContact(contact) {
       <div class="cta-box">
         <h2 style="font-size: clamp(2rem, 3.5vw, 2.5rem); margin-bottom: 12px; font-weight: 800;">${contact.heading}</h2>
         <p style="max-width: 600px; margin: 0 auto 32px; font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7;">${contact.subheading}</p>
-        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-          <a href="${contact.ctaLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 14px 30px; font-size: 1rem;">
+        <div class="cta-actions">
+          <a href="${contact.ctaLink}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-cta-lg">
             <i class="fa-brands fa-whatsapp"></i> ${contact.ctaText}
           </a>
-          <a href="mailto:${contact.email}" class="btn btn-outline" style="padding: 14px 30px; font-size: 1rem;">
+          <a href="mailto:${contact.email}" class="btn btn-outline btn-cta-lg">
             <i class="fa-solid fa-envelope"></i> Send Email
           </a>
         </div>
