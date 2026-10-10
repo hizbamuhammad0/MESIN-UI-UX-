@@ -1,0 +1,51 @@
+/**
+ * ==============================================================================
+ * 💫 ANIMATIONS & MICRO-INTERACTIONS
+ * ==============================================================================
+ * Terinspirasi oleh Emil Kowalski (Spring Physics & Subtle Fluid Motion).
+ * ==============================================================================
+ */
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 var(--accent-glow);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s var(--ease-spring) forwards;
+}
+
+/* 🧊 Shimmer effect on card highlights */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.project-card, .stat-card, .cert-card, .btn {
+  will-change: transform;
+}

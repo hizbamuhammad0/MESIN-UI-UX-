@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id" data-accent="cyan">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Profesional & Profil Karir</title>
+  <meta name="description" content="Portofolio profesional dan profil karir bertenaga sistem desain modular plug-and-play.">
+  
+  <!-- 🔠 Typography: Google Fonts (Outfit & Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- 🎨 Stylesheets Modular -->
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+
+  <!-- 🧭 Navbar Slot -->
+  <header class="navbar" id="navbar-slot"></header>
+
+  <!-- 🚀 Main Content Sections -->
+  <main id="main-content">
+    <section id="hero-slot"></section>
+    <section id="stats-slot"></section>
+    <section id="skills-slot"></section>
+    <section id="portfolio-slot"></section>
+    <section id="certifications-slot"></section>
+    <section id="experience-slot"></section>
+    <section id="contact-slot"></section>
+  </main>
+
+  <!-- ⚓ Footer -->
+  <footer style="text-align: center; padding: 48px 24px; border-top: 1px solid var(--border-subtle); color: var(--text-muted); font-size: 0.85rem;">
+    <div class="container">
+      <p>© <span id="current-year">2026</span> • Ditenagai oleh Sistem Desain Modular UI/UX</p>
+    </div>
+  </footer>
+
+  <!-- 🖼️ Lightbox Modal (Preview Detail Gambar/Sertifikat) -->
+  <div class="modal-overlay" id="lightbox-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeLightbox()" title="Tutup Preview">✕</button>
+      <img id="modal-img" src="" alt="Detail Preview" class="modal-img" />
+      <div class="modal-body">
+        <h3 id="modal-title" style="margin-bottom: 8px; font-size: 1.3rem;"></h3>
+        <p id="modal-desc" style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 📦 Data Layer (Single Source of Truth) -->
+  <script src="data/profile.js"></script>
+
+  <!-- ⚙️ UI Engine & Interaction Scripts -->
+  <script src="scripts/engine.js"></script>
+  <script src="scripts/interactions.js"></script>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

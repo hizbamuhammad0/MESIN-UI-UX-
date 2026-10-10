@@ -1,0 +1,114 @@
+/**
+ * ==============================================================================
+ * 🎨 DESIGN TOKENS (SISTEM TEMA & VARIABEL DESAIN)
+ * ==============================================================================
+ * Mengatur semua variabel warna, tipografi, ritme spasi, dan elevasi.
+ * ==============================================================================
+ */
+
+:root {
+  /* 🌌 Palet Dasar Dark Mode (Linear / Vercel Aesthetic) */
+  --bg-app: #080a0f;
+  --bg-surface: #0f131c;
+  --bg-card: rgba(18, 24, 37, 0.75);
+  --bg-card-hover: rgba(26, 35, 54, 0.9);
+  --bg-glass: rgba(255, 255, 255, 0.03);
+  --bg-glass-hover: rgba(255, 255, 255, 0.06);
+
+  /* 📏 Garis Batas & Border */
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-medium: rgba(255, 255, 255, 0.12);
+  --border-highlight: rgba(255, 255, 255, 0.22);
+
+  /* 🖋️ Tipografi & Teks */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-invert: #090d16;
+
+  /* 🔠 Font Families */
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* 📐 Skala Spasi (8pt Grid System) */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* 🔘 Radius Sudut */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* 💫 Animasi & Transisi (Emil Kowalski Spring Physics Inspired) */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.18s var(--ease-spring);
+  --transition-normal: 0.28s var(--ease-spring);
+  --transition-slow: 0.45s var(--ease-spring);
+
+  /* 🔮 Warna Aksen Default (Cyan Glow) */
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.25);
+  --accent-light: #7dd3fc;
+  --accent-dark: #0284c7;
+}
+
+/* 🎨 Preset Warna Aksen Plug & Play */
+[data-accent="cyan"] {
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.28);
+  --accent-light: #7dd3fc;
+  --accent-dark: #0284c7;
+}
+
+[data-accent="emerald"] {
+  --accent: #10b981;
+  --accent-glow: rgba(16, 185, 129, 0.28);
+  --accent-light: #6ee7b7;
+  --accent-dark: #059669;
+}
+
+[data-accent="purple"] {
+  --accent: #a855f7;
+  --accent-glow: rgba(168, 85, 247, 0.28);
+  --accent-light: #d8b4fe;
+  --accent-dark: #7e22ce;
+}
+
+[data-accent="amber"] {
+  --accent: #f59e0b;
+  --accent-glow: rgba(245, 158, 11, 0.28);
+  --accent-light: #fcd34d;
+  --accent-dark: #d97706;
+}
+
+[data-accent="rose"] {
+  --accent: #f43f5e;
+  --accent-glow: rgba(244, 63, 94, 0.28);
+  --accent-light: #fda4af;
+  --accent-dark: #e11d48;
+}
+
+/* ☀️ Dukungan Light Mode Opsional */
+[data-theme="light"] {
+  --bg-app: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --bg-card-hover: #ffffff;
+  --bg-glass: rgba(0, 0, 0, 0.02);
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-medium: rgba(0, 0, 0, 0.14);
+  --border-highlight: rgba(0, 0, 0, 0.24);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-invert: #ffffff;
+}
