@@ -101,7 +101,7 @@ window.PORTFOLIO_DATA = {
     }
   ],
 
-  // 📁 3. SELECTED WORK (PROJECTS & CASE STUDIES)
+  // 📁 3. WORK SHOWCASE (PROJECTS & PORTFOLIO)
   categories: [
     { id: "featured", label: "★ Flagship Highlights (3)" },
     { id: "ads", label: "Paid Traffic & Growth" },

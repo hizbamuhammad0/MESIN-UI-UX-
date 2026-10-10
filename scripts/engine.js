@@ -94,7 +94,7 @@ function renderNavbar(data) {
       <ul class="nav-links">
         <li><a href="#experience" class="nav-link">Career History</a></li>
         <li><a href="#certifications" class="nav-link">Credentials</a></li>
-        <li><a href="#portfolio" class="nav-link">Selected Work</a></li>
+        <li><a href="#portfolio" class="nav-link">Projects & Portfolio</a></li>
         <li><a href="#skills" class="nav-link">Competencies</a></li>
       </ul>
       <div class="nav-actions">
@@ -143,7 +143,7 @@ function renderHero(data) {
 
           <div class="hero-cta">
             <a href="#portfolio" class="btn btn-primary">
-              <i class="fa-solid fa-chart-line"></i> View Projects & Case Studies
+              <i class="fa-solid fa-chart-line"></i> View Projects & Portfolio
             </a>
             ${p.cvUrl ? `
               <a href="${p.cvUrl}" target="_blank" class="btn btn-outline">
@@ -298,8 +298,8 @@ function renderPortfolio(categories, projects) {
   slot.innerHTML = `
     <div class="container section" id="portfolio">
       <div class="section-header">
-        <span class="section-tag">Selected Work</span>
-        <h2 class="section-title">Projects & Case Studies</h2>
+        <span class="section-tag">Work Showcase</span>
+        <h2 class="section-title">Projects & Portfolio</h2>
         <p class="section-subtitle">Tangible campaign deliverables, lead management workflows, commercial design compositions, and verified reporting.</p>
       </div>
 
