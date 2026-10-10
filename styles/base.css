@@ -1,6 +1,6 @@
 /**
  * ==============================================================================
- * 📐 BASE STYLES & LAYOUT FOUNDATIONS
+ * 📐 BASE STYLES & LAYOUT FOUNDATIONS (POP-TECH GROWTH EDITION)
  * ==============================================================================
  */
 
@@ -24,26 +24,57 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
-  background-image: var(--bg-gradient);
+  position: relative;
+  /* Halftone dot pattern background */
+  background-image: var(--bg-pattern);
+  background-size: 20px 20px;
   background-attachment: fixed;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* 🌌 Ambient Background Glow Orbs */
+.bg-glow-1 {
+  position: fixed;
+  top: -12%;
+  right: -10%;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.75;
+  transition: background 0.3s ease;
+}
+
+.bg-glow-2 {
+  position: fixed;
+  bottom: 8%;
+  left: -10%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.22) 0%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.75;
+}
+
 /* 🖼️ Grid Container */
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-lg);
+  padding: 0 var(--space-md);
 }
 
 /* 🔠 Tipografi Umum */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   color: var(--text-primary);
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.015em;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   transition: color 0.3s ease;
 }
 
@@ -83,5 +114,5 @@ img {
   border-radius: var(--radius-full);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--border-highlight);
+  background: var(--accent);
 }

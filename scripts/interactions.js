@@ -1,8 +1,8 @@
 /**
  * ==============================================================================
- * 🎯 INTERACTIONS & EVENT LISTENERS
+ * 🎯 INTERACTIONS & EVENT LISTENERS (NESSA KAMALIKA)
  * ==============================================================================
- * Mengatur filter kategori, modal lightbox, dan interaksi pengguna.
+ * Category filtering, lightbox previews, and accessible keyboard handlers.
  * ==============================================================================
  */
 
@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const data = window.PORTFOLIO_DATA;
   if (!data || !data.projects) return;
 
-  // Render awal proyek (kategori: all)
+  // Render initial projects (category: all)
   renderFilteredProjects('all');
 
-  // Event Listener Tab Kategori
+  // Category Filter Tabs Event Listeners
   const tabButtons = document.querySelectorAll('.tab-btn');
   tabButtons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -29,6 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
   setupModalEvents();
 });
 
+const categoryNameMap = {
+  ads: 'Paid Traffic & Growth',
+  cs: 'Customer Operations',
+  design: 'Commercial Design',
+  media: 'Media & Journalism'
+};
+
 function renderFilteredProjects(category) {
   const grid = document.getElementById('portfolio-grid');
   if (!grid) return;
@@ -38,23 +45,29 @@ function renderFilteredProjects(category) {
     ? projects 
     : projects.filter(p => p.category === category);
 
-  grid.innerHTML = filtered.map(p => `
-    <div class="project-card fade-in" onclick="openLightbox('${p.image}', '${p.title}', '${p.description.replace(/'/g, "\\'")}')">
-      <div class="project-thumb-box">
-        <img src="${p.image}" alt="${p.title}" class="project-thumb" loading="lazy" />
-        ${p.metrics ? `<div class="project-pill-metric">${p.metrics}</div>` : ''}
-      </div>
-      <div class="project-content">
-        <span class="project-category-tag">${p.category}</span>
-        <h3 class="project-title">${p.title}</h3>
-        <p class="project-subtitle">${p.subtitle}</p>
-        <p class="project-desc">${p.description}</p>
-        <div class="project-tags">
-          ${(p.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}
+  grid.innerHTML = filtered.map(p => {
+    const categoryLabel = categoryNameMap[p.category] || p.category;
+    const safeDesc = (p.description || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    const safeTitle = (p.title || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+
+    return `
+      <div class="project-card fade-in" onclick="openLightbox('${p.image}', '${safeTitle}', '${safeDesc}')">
+        <div class="project-thumb-box">
+          <img src="${p.image}" alt="${p.title}" class="project-thumb" loading="lazy" />
+          ${p.metrics ? `<div class="project-pill-metric">${p.metrics}</div>` : ''}
+        </div>
+        <div class="project-content">
+          <span class="project-category-tag">${categoryLabel}</span>
+          <h3 class="project-title">${p.title}</h3>
+          <p class="project-subtitle">${p.subtitle}</p>
+          <p class="project-desc">${p.description}</p>
+          <div class="project-tags">
+            ${(p.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}
+          </div>
         </div>
       </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 // 🖼️ MODAL LIGHTBOX

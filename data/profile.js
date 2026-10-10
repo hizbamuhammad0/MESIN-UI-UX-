@@ -2,25 +2,24 @@
  * ==============================================================================
  * 📦 SINGLE SOURCE OF TRUTH (CLIENT DATA)
  * ==============================================================================
- * Nessa Kamalika — Professional Portfolio Profile
- * Clear, objective, data-backed professional English.
+ * Nessa Kamalika — Growth & Performance Marketing
  * ==============================================================================
  */
 
 window.PORTFOLIO_DATA = {
   // 🎨 THEME & STYLE CONFIGURATION
   theme: {
-    style: "tech-glossy", // "tech-glossy" | "warm-editorial" | "human-minimal" | "organic-earthy" | "neo-heritage"
-    accent: "cyan",       // "cyan" | "emerald" | "purple" | "amber" | "rose" | "gold"
+    style: "tech-glossy", // Adopted high-energy dark aesthetic
+    accent: "cyan",       // Primary growth accent: "cyan" | "emerald" | "purple" | "amber" | "rose" | "gold"
     mode: "dark"
   },
 
   // 👤 PERSONAL & CONTACT DETAILS
   personal: {
     name: "Nessa Kamalika",
-    title: "Performance Advertiser & Customer Service Team Leader",
-    badge: "Available for Full-Time Roles & Growth Consulting",
-    bio: "Digital marketing and customer operations practitioner specializing in paid advertising (Meta, Shopee, TikTok Ads) and Customer Service sales closing. Experienced in managing ad spend, supervising teams of 5 CS specialists, and turning inbound leads into verified revenue.",
+    title: "Growth & Performance Marketing",
+    badge: "Available for Roles & Growth Consulting",
+    bio: "Growth & Performance Marketer focused on driving sustainable revenue growth through targeted paid advertising and end-to-end funnel execution. Experienced in scaling multi-channel campaigns across Meta, TikTok, and Marketplace Ads from the ground up, delivering IDR 600M–800M/month in revenue with consistent 3.5x–5.0x ROAS on ad budgets up to IDR 200M/month. Combines analytical campaign scaling with customer operations leadership to drive conversion rates and secure an exceptional closing rate of up to 87%.",
     location: "Yogyakarta, Indonesia",
     avatar: "assets/images/avatar.png",
     cvUrl: "assets/docs/cv.pdf",
@@ -34,72 +33,99 @@ window.PORTFOLIO_DATA = {
   // 🎛️ SECTION VISIBILITY TOGGLES
   sections: {
     stats: true,
-    skills: true,
-    portfolio: true,
-    certifications: true,
-    experience: true,
+    experience: true,     // 1. Career History (Experience & Education)
+    certifications: true, // 2. Verified Credentials (Licenses & Certifications)
+    portfolio: true,      // 3. Selected Work (Projects & Case Studies)
+    skills: true,         // 4. Core Competencies (Skills & Tools)
     contact: true
   },
 
-  // 📊 KEY PERFORMANCE METRICS (VERIFIED HARD DATA)
+  // 📊 KEY PERFORMANCE METRICS
   stats: [
-    { label: "Average Ad ROAS", value: "4.8x – 6.2x", desc: "Meta & TikTok Ads campaign scaling" },
-    { label: "Store Revenue Generated", value: "IDR 100M+", desc: "Shopee Ads Pusat Herbal (First 6 months)" },
-    { label: "CS Team Closing Rate", value: "87%", desc: "Department record (75% standard benchmark)" },
-    { label: "National Certification", value: "BNSP Certified", desc: "Digital Marketing License valid to 2027" }
+    { label: "Monthly Revenue Delivered", value: "IDR 600M–800M", desc: "Multi-channel store scaling" },
+    { label: "Consistent Ad ROAS", value: "3.5x – 5.0x", desc: "On ad budgets up to IDR 200M/month" },
+    { label: "Peak Closing Rate", value: "87%", desc: "Customer operations leadership" },
+    { label: "National Competency", value: "BNSP Licensed", desc: "Digital Marketing (Valid to 2027)" }
   ],
 
-  // 🛠️ CORE EXPERTISE & TOOL STACK
-  skills: [
+  // 💼 1. CAREER HISTORY (EXPERIENCE & EDUCATION)
+  experience: [
     {
-      category: "Paid Advertising & Traffic",
-      icon: "trending-up",
-      items: ["Meta Ads Manager", "Shopee Ads", "TikTok Ads", "A/B Creative Testing", "Audience Segmentation", "Budget Scaling", "ROAS Optimization"]
+      period: "Jun 2025 — Mar 2026",
+      role: "Customer Service Team Leader & Growth Advertiser",
+      company: "CV. Creaidea Innovation",
+      desc: "Supervised 5 CS specialists handling 80–120 daily WhatsApp inquiries. Established structured objection-handling scripts, achieving a record closing rate of 87% and driving a 20%–25% monthly revenue lift."
     },
     {
-      category: "Customer Service & Operations",
-      icon: "users",
-      items: ["Team Leadership (5 Staff)", "Objection Handling Scripts", "Lead Pipeline Management", "WhatsApp Business CRM", "Daily KPI Tracking", "Closing Rate Strategy"]
+      period: "Feb 2024 — Aug 2024",
+      role: "Journalist & Field Reporter (Internship)",
+      company: "Harian Republika DIY",
+      desc: "Reported on regional education, public policies, and community economic development. Published 10 verified news reports across Republika Jogja and Republika TV."
     },
     {
-      category: "Visual Design & Copywriting",
-      icon: "layout",
-      items: ["Adobe Photoshop", "Canva Pro", "Sports Matchday Posters", "Social Media Graphics", "Direct-Response Copy", "Visual Composition"]
+      period: "Sep 2023 — Aug 2024",
+      role: "Customer Service Specialist & Digital Marketer",
+      company: "Retail Commerce & Agency",
+      desc: "Executed paid campaign traffic and direct consultative WhatsApp selling, ensuring rapid response times and high customer lifetime value."
     },
     {
-      category: "Public Communication & Media",
-      icon: "file-text",
-      items: ["Fact-Checking & Field Reporting", "Source Interviews", "Press Article Writing", "Assistant Video Directing", "Ethics of Journalism"]
+      period: "Graduated 2024",
+      role: "Bachelor of Communication Science (S.I.Kom)",
+      company: "Universitas Amikom Yogyakarta",
+      desc: "Graduated Cum Laude with a 3.81 GPA. Conferred the Best Graduate honor in the Department of Communication Science."
     }
   ],
 
-  // 🏷️ PORTFOLIO FILTER CATEGORIES
-  categories: [
-    { id: "all", label: "All Work" },
-    { id: "ads", label: "Paid Advertising" },
-    { id: "cs", label: "Customer Service" },
-    { id: "design", label: "Graphic Design" },
-    { id: "media", label: "Media & Journalism" }
+  // 📜 2. VERIFIED CREDENTIALS (LICENSES & CERTIFICATIONS)
+  certifications: [
+    {
+      title: "National Competency Certificate in Digital Marketing",
+      issuer: "National Professional Certification Board (BNSP)",
+      year: "2024 – 2027",
+      desc: "Reg. No. M 1962 01525 2024 / No. 78422 2431 2 0201436 2024. Official national competency certification in digital marketing strategy, campaign execution, and performance analytics.",
+      image: "assets/images/sertifikat_bnsp.jpg"
+    },
+    {
+      title: "Professional Online Marketing Vocational Training",
+      issuer: "LPK GeTI Incubator",
+      year: "2024",
+      desc: "Intensive vocational program covering online marketplace algorithms, full-funnel customer journeys, and performance advertising metrics.",
+      image: "assets/images/sertifikat_geti.jpg"
+    },
+    {
+      title: "Best Customer Service Performance Award",
+      issuer: "CV. Creaidea Innovation",
+      year: "2024",
+      desc: "Corporate performance recognition awarded for outstanding closing consistency, lead management discipline, and divisional team leadership.",
+      image: "assets/images/cs_dashboard_1.jpeg"
+    }
   ],
 
-  // 📁 REAL PROJECT CASE REPOSITORIES
+  // 📁 3. SELECTED WORK (PROJECTS & CASE STUDIES)
+  categories: [
+    { id: "all", label: "All Projects" },
+    { id: "ads", label: "Paid Traffic & Growth" },
+    { id: "cs", label: "Customer Operations" },
+    { id: "design", label: "Commercial Design" },
+    { id: "media", label: "Media & Journalism" }
+  ],
   projects: [
     {
       id: "proj-1",
       category: "ads",
       title: "Meta Ads Scaling — Herbal Health Products",
-      subtitle: "Paid Traffic Management & Budget Allocation",
-      metrics: "ROAS 4.6x – 6.2x • Managed Daily Spend",
-      description: "Restructured ad sets into creative testing (video vs static), 1–3% lookalike audiences, and broad geographic targeting to scale sales while maintaining positive return on ad spend.",
+      subtitle: "Paid Traffic Acquisition & Budget Allocation",
+      metrics: "3.5x – 5.0x ROAS • Budget Scaling",
+      description: "Restructured ad campaigns across creative variations, custom lookalikes, and broad demographic targeting to scale revenue while maintaining stable acquisition margins.",
       image: "assets/images/ads_meta_1.jpeg",
       tags: ["Meta Ads", "ROAS", "Performance Marketing"]
     },
     {
       id: "proj-2",
       category: "ads",
-      title: "Shopee Marketplace Store Launch — Pusat Herbal Indonesia",
+      title: "Shopee Marketplace Scaling — Pusat Herbal Indonesia",
       subtitle: "Search Keyword Ads & Fast Chat Operations",
-      metrics: "IDR 100M Revenue • 4.8/5.0 Store Rating",
+      metrics: "IDR 100M Revenue • 4.8/5.0 Rating",
       description: "Managed keyword bids during peak buyer hours and maintained a 92% chat response rate, growing the store from zero to IDR 100M revenue within its first six months.",
       image: "assets/images/ads_shopee_1.png",
       tags: ["Shopee Ads", "Marketplace", "E-Commerce"]
@@ -107,10 +133,10 @@ window.PORTFOLIO_DATA = {
     {
       id: "proj-3",
       category: "ads",
-      title: "TikTok Ads Campaign — Hap Hap Snack (F&B)",
-      subtitle: "Short-Form Video Ad Campaign for FMCG",
+      title: "TikTok Ads Campaign — Hap Hap Snack (FMCG)",
+      subtitle: "Short-Form Video Direct Response Ads",
       metrics: "3.4% Link CTR • High Youth Engagement",
-      description: "Executed TikTok video ads using user-generated content (UGC) formats and interest targeting to drive direct consumer purchase for packaged snacks.",
+      description: "Executed TikTok video ads using user-generated content (UGC) angles and interest segmentation to drive direct consumer purchase for packaged snacks.",
       image: "assets/images/ads_tiktok_1.png",
       tags: ["TikTok Ads", "FMCG", "Short Video"]
     },
@@ -186,56 +212,34 @@ window.PORTFOLIO_DATA = {
     }
   ],
 
-  // 📜 PROFESSIONAL LICENSES & ACCREDITATIONS
-  certifications: [
+  // 🛠️ 4. CORE COMPETENCIES (SKILLS & TOOLS)
+  skills: [
     {
-      title: "National Competency Certificate in Digital Marketing",
-      issuer: "National Professional Certification Board (BNSP)",
-      year: "2024 – 2027",
-      desc: "Registration No. M 1962 01525 2024. Official national certification verifying competencies in integrated digital marketing strategy and execution.",
-      image: "assets/images/sertifikat_bnsp.jpg"
+      category: "Growth & Paid Advertising",
+      icon: "trending-up",
+      items: ["Meta Ads Manager", "Shopee Ads", "TikTok Ads", "Multi-Channel Scaling", "A/B Creative Testing", "Audience Segmentation", "ROAS Optimization"]
     },
     {
-      title: "Professional Online Marketing Training Certificate",
-      issuer: "LPK GeTI Incubator",
-      year: "2024",
-      desc: "Completed professional vocational training in marketplace store optimization, marketing funnels, and performance reporting.",
-      image: "assets/images/sertifikat_geti.jpg"
+      category: "Customer Operations & Leadership",
+      icon: "users",
+      items: ["Team Leadership (5 Staff)", "Objection Handling Scripts", "Lead Pipeline Management", "WhatsApp Business CRM", "Daily KPI Tracking", "Closing Rate Strategy"]
+    },
+    {
+      category: "Visual Communication & Creative",
+      icon: "layout",
+      items: ["Adobe Photoshop", "Canva Pro", "Sports Matchday Posters", "Social Media Graphics", "Direct-Response Copy", "Visual Composition"]
+    },
+    {
+      category: "Public Communication & Journalism",
+      icon: "file-text",
+      items: ["Fact-Checking & Field Reporting", "Source Interviews", "Press Article Writing", "Assistant Video Directing", "Ethics of Journalism"]
     }
   ],
 
-  // 💼 WORK & EDUCATION HISTORY
-  experience: [
-    {
-      period: "Jun 2025 — Mar 2026",
-      role: "Customer Service Team Leader & Advertiser",
-      company: "CV. Creaidea Innovation",
-      desc: "Supervised 5 CS specialists, tracked daily closing metrics (achieving a record 87% rate), and managed ad spend for health and wellness products."
-    },
-    {
-      period: "Feb 2024 — Aug 2024",
-      role: "Journalist & Field Reporter (Internship)",
-      company: "Harian Republika DIY",
-      desc: "Reported on regional education, social issues, and public policies. Published 10 articles on the national Republika news platform."
-    },
-    {
-      period: "Sep 2023 — Aug 2024",
-      role: "Customer Service Specialist & Digital Marketer",
-      company: "Retail Commerce & Agency",
-      desc: "Managed customer consultations on WhatsApp and chat marketplaces, with direct responsibility for order closing and repeat purchases."
-    },
-    {
-      period: "Graduated 2024",
-      role: "Bachelor of Communication Science (S.I.Kom)",
-      company: "Universitas Amikom Yogyakarta",
-      desc: "Graduated Cum Laude with a 3.81 GPA. Recognized as Best Graduate in the Department of Communication Science."
-    }
-  ],
-
-  // 📬 DIRECT CALL TO ACTION
+  // 📬 CONTACT & CALL TO ACTION
   contact: {
-    heading: "Let's Work Together",
-    subheading: "Open to full-time roles, paid advertising management, and customer service operations consulting.",
+    heading: "Let's Scale Your Revenue",
+    subheading: "Available for full-time growth roles, multi-channel ad management, and customer service operations consulting.",
     email: "nessakamalika@gmail.com",
     whatsapp: "+62 878-3420-3959",
     ctaText: "Chat on WhatsApp",
