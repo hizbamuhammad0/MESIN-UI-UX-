@@ -1,135 +1,97 @@
-# 📋 Cetak Biru Perencanaan Website Profil Profesional: Nessa Kamalika
+# 📋 Rencana Pembuatan Website Profil Profesional: Nessa Kamalika
 
-Dokumen ini merinci rencana strategis, arsitektur informasi, positioning karir, hingga roadmap eksekusi pembuatan website portofolio profesional berdaya konversi tinggi untuk **Nessa Kamalika**.
-
----
-
-## 🎯 1. Positioning Strategis & Value Proposition
-
-### Tantangan Utama
-Nessa memiliki keahlian di 4 bidang: *Digital Advertising*, *Customer Service Leadership*, *Desain Grafis*, dan *Jurnalistik*. Menampilkannya secara terpisah berisiko membuat calon klien/rekruter menganggapnya "kurang fokus".
-
-### Solusi Narasi (Positioning Framing)
-Posisikan Nessa sebagai:
-> **"Full-Funnel Growth Marketer & Revenue Operations Leader"**  
-> *"Praktisi langka yang menguasai rantai konversi bisnis hulu-ke-hilir: mulai dari riset pasar & materi visual, eksekusi iklan berbayar (Meta/Shopee/TikTok Ads), hingga memimpin tim Customer Service dalam menutup penjualan (closing sales)."*
-
-### Target Audiens Utama (User Personas)
-1. **Business Owner / CEO Brand D2C & UMKM**: Mencari praktisi yang bisa meningkatkan omzet riil dan menjaga ROAS iklan tetap sehat.
-2. **Head of Growth / Marketing Lead di Agensi**: Membutuhkan advertiser berbasis data dengan pemahaman audiens, copywriting, dan analitik.
-3. **HR & Recruiter Korporat**: Membutuhkan bukti kredibilitas legalitas (Sertifikat BNSP, predikat Cumlaude Amikom IPK 3.81).
+Dokumen ini memuat spesifikasi struktur, konten faktual, dan alur kerja pembuatan website profil profesional Nessa Kamalika dengan pendekatan objektif dan berbasis data riil.
 
 ---
 
-## 🏛️ 2. Arsitektur Informasi & Alur Halaman (Page Structure)
+## 🎯 1. Informasi Profil & Fokus Peran
+
+* **Nama Lengkap**: Nessa Kamalika
+* **Pendidikan**: S1 Ilmu Komunikasi, Universitas Amikom Yogyakarta (IPK 3.81 / Wisudawan Terbaik)
+* **Peran Utama**: Digital Advertiser & Customer Service Team Leader
+* **Sertifikasi Profesi**: BNSP Pemasaran Daring (No. Reg. `M 1962 01525 2024`, berlaku s/d Maret 2027)
+* **Deskripsi Objektif**:  
+  Praktisi komunikasi dan pemasaran digital dengan pengalaman kerja mengelola kampanye iklan berbayar (Meta, Shopee, TikTok Ads), memimpin operasional tim Customer Service, serta memproduksi konten visual dan publikasi jurnalistik.
+
+---
+
+## 📊 2. Rekapitulasi Data & Metrik Riil
+
+Seluruh angka di bawah ini bersumber langsung dari rekapitulasi data kerja di folder dokumen:
+
+| Indikator Kinerja (KPI) | Nilai / Data Riil | Sumber Berkas |
+| :--- | :--- | :--- |
+| **ROAS Iklan Berbayar** | 4.8x – 6.2x | Dashboard Meta Ads (Laporan Spend & ROAS Herbal Health) |
+| **Omzet Toko Marketplace** | Rp 100.000.000 (6 bulan pertama) | Shopee Ads (Pusat Herbal Indonesia) |
+| **Closing Rate CS** | 87% (Standar divisi: 75%) | Laporan Evaluasi Harian CV. Creaidea Innovation |
+| **Skala Tim CS** | 5 Staf Customer Service | Dokumentasi Timetable & Jadwal Operasional |
+| **Volume Lead Harian** | 80 – 120 inquiries / hari | Laporan Harian Lead Redirect WhatsApp |
+| **Publikasi Media Massa** | 10 Berita Terverifikasi | Harian Republika DIY (Februari – Agustus 2024) |
+| **Penghargaan Kerja** | *Best Customer Service Performance (2024)* | CV. Creaidea Innovation |
+
+---
+
+## 🏛️ 3. Arsitektur Struktur Halaman
+
+Halaman disusun dalam 7 modul struktural tanpa elemen dekoratif berlebih:
 
 ```mermaid
 flowchart TD
-    Navbar["1. Navbar Sticky (Brand Logo + Quick Nav + Tombol Unduh CV & WA)"]
-    Hero["2. Hero Section (Foto Profil, Status Badge, Headline Nilai Jual, Akreditasi BNSP)"]
-    Metrics["3. Metric Proof Ribbon (ROAS 4.8x-6.2x • Omzet Rp 1.2M+ • Closing Rate 87%)"]
-    Pillars["4. Tiga Pilar Keahlian Utama (Traffic Acquisition, CS Closing, Visual Content)"]
-    Portfolio["5. Portofolio & Studi Kasus (Filter Tab: Ads, CS Team, Desain, Jurnalistik)"]
-    Creds["6. Bukti Kredensial & Validitas (Sertifikat BNSP, Pelatihan GeTI, Amikom Cumlaude)"]
-    Timeline["7. Rekam Jejak Karir (Creaidea Leader, Republika Reporter, Education)"]
-    CTA["8. Contact Box & Call to Action (Direct WA, Email, LinkedIn)"]
+    Nav["1. Navigasi: Tautan Section + Akses CV PDF"]
+    Hero["2. Profil: Foto Formal, Peran, Lisensi BNSP, Kontak"]
+    Stats["3. Ringkasan Metrik: 4 Kartu Angka Kinerja Riil"]
+    Katalog["4. Portofolio: Filter 4 Kategori Kerja (Ads, CS, Desain, Berita)"]
+    Sertif["5. Kredensial: Sertifikat BNSP & LPK GeTI"]
+    Karir["6. Riwayat Karir: Creaidea (Leader CS) & Republika (Reporter)"]
+    Kontak["7. Kontak: WhatsApp Langsung & Email Resmi"]
 
-    Navbar --> Hero --> Metrics --> Pillars --> Portfolio --> Creds --> Timeline --> CTA
+    Nav --> Hero --> Stats --> Katalog --> Sertif --> Karir --> Kontak
 ```
 
 ---
 
-## 📑 3. Rincian Konten Tiap Bagian
+## 📁 4. Rincian Objek Portofolio yang Ditampilkan
 
-### 1. Hero Section
-* **Badge Status**: `🟢 Tersedia untuk Pekerjaan Full-Time & Konsultasi Growth`
-* **Headline**: Nessa Kamalika — *Full-Funnel Growth Marketer & Revenue Operations Leader*
-* **Sub-headline**: Menghubungkan strategi iklan berbayar berperforma tinggi dengan sistem kepemimpinan tim CS berkonversi maksimal.
-* **Trust Badges**:
-  * 🏅 Wisudawan Terbaik Amikom (IPK 3.81 Cumlaude)
-  * 📜 Lisensi BNSP Digital Marketing Resmi (No. Reg `M 1962 01525 2024`)
-* **Tombol Aksi**: `Lihat Hasil Proyek` & `Unduh Resume (PDF)`
+### Kategori A: Digital Advertising (Paid Traffic)
+1. **Meta Ads — Produk Herbal Health**: Laporan pembagian budget, testing interest, dan ROAS 4.6x.
+2. **Shopee Ads — Pusat Herbal Indonesia**: Optimasi kata kunci pencarian dan iklan produk serupa.
+3. **TikTok Ads — F&B Hap Hap Snack**: Penggunaan video format vertikal untuk audiens konsumsi ringan.
+4. **Meta Ads — Biro Perjalanan Dewanta Trans**: Kampanye lead generation jasa transportasi pariwisata.
 
----
+### Kategori B: Customer Service & Operasional Tim
+1. **Dashboard Monitoring Lead**: Pencatatan konversi harian dan evaluasi follow-up chat WhatsApp.
+2. **SOP & Koordinasi Tim**: Whiteboard jadwal kerja, monitoring closing rate, dan pembagian shift 5 staf.
+3. **Bukti Apresiasi Performa**: Catatan pencapaian closing rate 87% dan bukti pengakuan manajemen.
 
-### 2. Metric Proof Ribbon (Social Proof Kuantitatif)
-Menampilkan 4 angka pencapaian penting untuk membangun kepercayaan instan dalam 3 detik pertama:
-1. **4.8x – 6.2x** — Rata-rata ROAS Iklan Berbayar (Meta & TikTok Ads).
-2. **Rp 1.2 Miliar+** — Total Omzet Toko & Akumulasi Penjualan Dikelola.
-3. **87%** — Rekor Closing Rate Tertinggi Tim Customer Service (Target: 75%).
-4. **10 Artikel** — Karya Jurnalistik Terverifikasi di Harian Republika.
+### Kategori C: Desain Grafis Komersial
+1. **Poster Pertandingan (Matchday)**: Desain publikasi olahraga format cetak dan digital media sosial.
+2. **Poster Kejuaraan (Championship)**: Desain perayaan kemenangan tim sepak bola.
+3. **Materi Promosi Pendaftaran**: Poster open registration Football Academy.
 
----
-
-### 3. Tiga Pilar Solusi (Core Growth Pillars)
-Menjelaskan bagaimana 3 kompetensi Nessa saling menguatkan alur bisnis:
-* **Pilar 1: Paid Acquisition (Iklan Berbayar)**
-  * *Tools*: Meta Ads Manager, Shopee Ads, TikTok Ads.
-  * *Output*: Targeting terukur, riset audiens, testing materi kreatif, dan scaling budget efisien.
-* **Pilar 2: Conversion & Team Operations (Customer Service)**
-  * *Tools*: CRM, SOP Tim, Objection Handling, Lead Pipeline.
-  * *Output*: Rekrutmen & supervisi 5 staf CS, pemetaan kendala closing, dan peningkatan omzet tim 25%.
-* **Pilar 3: Creative Communication (Desain & Copywriting)**
-  * *Tools*: Adobe Photoshop, Canva, Riset Jurnalistik.
-  * *Output*: Poster olahraga energik, copy iklan berdaya bujuk tinggi, dan narasi berita publikasi nasional.
+### Kategori D: Publikasi Jurnalistik & Media
+1. **10 Liputan Berita Republika**:
+   * Liputan Solidaritas Bela Palestina di UII.
+   * Liputan Isu Pendidikan (Sekolah Tanpa Gawai, Edukasi Perawatan Rambut UGM).
+   * Liputan Isu Ekonomi Lokal (Relokasi PKL Malioboro).
+   * Liputan Konferensi Internasional AAS-in-Asia 2024 di UGM.
+2. **Produksi Video**: Asisten Sutradara pada video musik *Langit Sore — Cinta Hanya Cerita Luka* (YouTube).
 
 ---
 
-### 4. Portofolio Proyek Interaktif (Filter Tabs)
-Dikelompokkan ke dalam 4 tab interaktif:
+## 🎨 5. Spesifikasi Tampilan Visual
 
-| Kategori | Proyek yang Ditampilkan | Bukti Visual (Screenshot) |
-| :--- | :--- | :--- |
-| **Digital Advertising** | • Meta Ads — Skala Produk Herbal Health (ROAS 4.6x)<br>• Shopee Ads — Toko Pusat Herbal (Omzet Rp 100jt)<br>• TikTok Ads — F&B Hap Hap Snack & Fashion Raraya | Tangkapan layar dashboard asli FB Ads, Shopee Ads, dan TikTok Ads |
-| **CS Leadership** | • Dashboard Monitoring Closing Rate CS (Juni 2025)<br>• Dokumentasi Timetable & Whiteboard Koordinasi Tim<br>• Laporan Omzet Harian Divisi CS | Bukti chat apresiasi closing, whiteboard strategi, dan diagram omzet |
-| **Desain Grafis** | • Matchday Premier League Sports Poster<br>• Championship Triple Winner Celebration Poster<br>• Football Academy Open Registration | Berkas gambar resolusi tinggi poster olahraga profesional |
-| **Karya Jurnalistik** | • Liputan Aksi Bela Palestina di UII (Republika)<br>• Liputan Pendidikan, UMKM, dan Isu Sosial DIY<br>• Asisten Sutradara Video Musik (YouTube) | Tautan berita langsung ke portal Republika & video YouTube |
-
----
-
-### 5. Sertifikasi & Validitas Legalitas
-* **Sertifikat BNSP**: Pemasaran Daring (Masa berlaku 2024 – 2027) lengkap dengan nomor lisensi dan modal pembesar gambar (*lightbox*).
-* **Pelatihan GeTI Incubator**: Sertifikat Pemasaran Daring Profesional.
-* **Penghargaan Kerja**: *Best Customer Service Performance 2024* (CV Creaidea Innovation).
+* **Preset Gaya**: `tech-glossy` (Dark Mode bersih dengan kontras teks tinggi).
+* **Warna Aksen**: `cyan` (`#38bdf8`) untuk elemen penanda tautan dan tombol.
+* **Tipografi**:
+  * Judul: Google Fonts *Outfit* (jelas, tegas).
+  * Teks Isi: Google Fonts *Plus Jakarta Sans* (keterbacaan tinggi untuk data dan deskripsi).
+* **Prinsip Tampilan**: Faktual, rapi, minim ornamen, fokus pada gambar bukti dan angka metrik.
 
 ---
 
-### 6. Kontak & Pemicu Konversi (Call to Action)
-* **Pesan Utama**: *"Siap Meningkatkan Konversi dan Efisiensi Bisnis Anda?"*
-* **Tautan Langsung**:
-  * WhatsApp Direct: `+62 878-3420-3959`
-  * Email Resmi: `nessakamalika@gmail.com`
-  * Profil LinkedIn: `linkedin.com/in/nessa-kamalika`
+## 🛠️ 6. Tahapan Eksekusi
 
----
-
-## 🎨 4. Rekomendasi Art Style & Identitas Visual
-
-Untuk profil Nessa, direkomendasikan gaya:
-* **Gaya Terpilih**: **`tech-glossy`** *(Default)* dengan opsi alternatif **`warm-editorial`**.
-* **Alasan Pemilihan**:
-  1. *Tech Glossy* memberikan kesan modern, analitis, dan sangat cocok dengan dashboard metrik periklanan digital.
-  2. Aksen **Cyan Glow** (`#38bdf8`) atau **Emerald Growth** (`#10b981`) melambangkan pertumbuhan profit (*growth & revenue*).
-  3. Tipografi **Outfit** (modern sans display) mencerminkan ketegasan eksekutif muda berprestasi.
-
----
-
-## 🚀 5. Roadmap 4 Langkah Eksekusi Teknis
-
-```text
-[Langkah 1: Sinkronisasi Data]
-  Tuangkan seluruh data riil ke dalam file: data/profile.js
-  (Nama, nomor WA, sertifikat BNSP, link berita Republika, dan seluruh proyek)
-       │
-       ▼
-[Langkah 2: Migrasi Aset Gambar Lengkap]
-  Salin 22 gambar bukti dashboard dari PORTOFOLIO_NESSA ke assets/images/
-       │
-       ▼
-[Langkah 3: Pengujian Interaksi & Pratinjau Lokal]
-  Uji lightbox modal, responsive mobile view, dan uji tombol kontak WA & CV
-       │
-       ▼
-[Langkah 4: Deploy & Git Sync]
-  Commit perubahan ke repositori GitHub dan siap meluncur ke Vercel!
-```
+1. **Sinkronisasi Data**: Memasukkan data faktual di atas ke dalam `data/profile.js`.
+2. **Penyusunan Aset**: Memastikan 22 berkas gambar pendukung siap di `assets/images/`.
+3. **Verifikasi Tautan**: Menguji tautan WhatsApp, berkas CV PDF, dan 10 URL artikel Republika.
+4. **Penyelarasan Git**: Commit berkas ke repositori lokal dan push ke GitHub.
