@@ -211,7 +211,8 @@ window.PORTFOLIO_DATA = {
       subtitle: "10 Verified Investigative Articles & News Reports",
       metrics: "10 Published Reports • Republika Jogja & TV",
       description: "Conducted field interviews, verified sources, and published 10 official news reports covering regional socioeconomic relocation, higher education policies, cultural conferences, and humanitarian initiatives.",
-      image: "assets/images/journalism_republika.jpg",
+      image: "",
+      icon: "fa-solid fa-newspaper",
       tags: ["Journalism", "Field Reporting", "Published Media", "Fact-Checking"],
       links: [
         {
@@ -283,7 +284,8 @@ window.PORTFOLIO_DATA = {
       subtitle: "Assistant Directing & Commercial Producing",
       metrics: "Commercial Ads & Music Video • YouTube",
       description: "Managed video shoot logistics, creative storytelling, talent directing, and client delivery for commercial products and narrative music videos broadcasted on YouTube.",
-      image: "assets/images/journalism_republika.jpg",
+      image: "",
+      icon: "fa-solid fa-film",
       tags: ["Video Production", "Assistant Director", "Producer", "YouTube Works"],
       links: [
         {
@@ -313,7 +315,8 @@ window.PORTFOLIO_DATA = {
       subtitle: "Department of Communication Science, Universitas Amikom Yogyakarta",
       metrics: "GPA 3.81 • Best Graduate Honor Period 93",
       description: "Conferred the Best Graduate Honor in the Department of Communication Science with a 3.81 Cumulative GPA. Celebrated for high-distinction coursework and published communication research.",
-      image: "assets/images/sertifikat_bnsp.jpg",
+      image: "",
+      icon: "fa-solid fa-graduation-cap",
       tags: ["Academic Honor", "Best Graduate", "Communication Science", "Amikom"],
       links: [
         {

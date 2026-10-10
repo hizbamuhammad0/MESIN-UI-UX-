@@ -672,6 +672,43 @@
   box-shadow: var(--shadow-pop);
 }
 
+/* Editorial / Text-First Project Cards (No Cover Image) */
+.project-card.editorial-card {
+  border-top: 3px solid var(--accent);
+}
+
+.editorial-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-lg) var(--space-lg) 0;
+  margin-bottom: var(--space-2xs);
+}
+
+.editorial-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  border: 2px solid var(--border-medium);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.editorial-metric-pill {
+  padding: 4px 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-light);
+}
+
 .project-thumb-box {
   position: relative;
   width: 100%;

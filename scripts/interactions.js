@@ -3,7 +3,7 @@
  * 🎯 INTERACTIONS & EVENT LISTENERS (NESSA KAMALIKA)
  * ==============================================================================
  * Smart category filtering, flagship showcase mode, rich modal with live links,
- * and accessible keyboard event handlers.
+ * image-optional editorial card rendering, and accessible keyboard handlers.
  * ==============================================================================
  */
 
@@ -61,15 +61,29 @@ function renderFilteredProjects(category) {
     const safeDesc = (p.description || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
     const safeTitle = (p.title || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
     const isFeatured = p.featured === true;
+    const hasImage = p.image && p.image.trim() !== '';
     const hasLinks = p.links && p.links.length > 0;
 
-    return `
-      <div class="project-card fade-in" onclick="openLightbox('${p.image}', '${safeTitle}', '${safeDesc}', '${p.id}')">
+    const headerHtml = hasImage
+      ? `
         <div class="project-thumb-box">
           <img src="${p.image}" alt="${p.title}" class="project-thumb" loading="lazy" />
           ${isFeatured ? '<div class="flagship-badge">★ Flagship Impact</div>' : ''}
           ${p.metrics ? `<div class="project-pill-metric">${p.metrics}</div>` : ''}
         </div>
+      `
+      : `
+        <div class="editorial-header-bar">
+          <div class="editorial-icon-badge">
+            <i class="${p.icon || 'fa-solid fa-file-lines'}"></i>
+          </div>
+          ${p.metrics ? `<div class="editorial-metric-pill">${p.metrics}</div>` : ''}
+        </div>
+      `;
+
+    return `
+      <div class="project-card ${hasImage ? '' : 'editorial-card'} fade-in" onclick="openLightbox('${p.image || ''}', '${safeTitle}', '${safeDesc}', '${p.id}')">
+        ${headerHtml}
         <div class="project-content">
           <span class="project-category-tag">${categoryLabel}</span>
           <h3 class="project-title">${p.title}</h3>
@@ -151,7 +165,7 @@ window.switchPortfolioTab = function(categoryId) {
   }
 };
 
-// 🖼️ MODAL LIGHTBOX WITH RICH MEDIA LINKS SUPPORT
+// 🖼️ MODAL LIGHTBOX WITH CLEAN ADAPTIVE DISPLAY
 window.openLightbox = function(imageSrc, title, desc, projectId) {
   const modal = document.getElementById('lightbox-modal');
   const modalImg = document.getElementById('modal-img');
@@ -161,7 +175,17 @@ window.openLightbox = function(imageSrc, title, desc, projectId) {
 
   if (!modal) return;
 
-  if (modalImg) modalImg.src = imageSrc || '';
+  // Adaptive Image Display: Hide completely if no image or empty string
+  if (modalImg) {
+    if (imageSrc && imageSrc.trim() !== '') {
+      modalImg.src = imageSrc;
+      modalImg.style.display = 'block';
+    } else {
+      modalImg.src = '';
+      modalImg.style.display = 'none';
+    }
+  }
+
   if (modalTitle) modalTitle.textContent = title || '';
   if (modalDesc) modalDesc.textContent = desc || '';
 
