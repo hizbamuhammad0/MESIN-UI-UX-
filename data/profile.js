@@ -101,119 +101,168 @@ window.PORTFOLIO_DATA = {
     }
   ],
 
-  // 📁 3. WORK SHOWCASE (PROJECTS & PORTFOLIO)
+  // 📁 3. WORK SHOWCASE (3 CORE COMMERCIAL PILLARS)
   categories: [
-    { id: "featured", label: "★ Flagship Highlights (3)" },
-    { id: "ads", label: "Paid Traffic & Growth" },
-    { id: "cs", label: "Customer Operations" },
-    { id: "design", label: "Commercial Design" },
-    { id: "media", label: "Media & Journalism" },
-    { id: "all", label: "All Projects (12)" }
+    { id: "ads", label: "🚀 Paid Traffic & Ads Growth (5)" },
+    { id: "cs", label: "💬 Customer Operations & CRM (4)" },
+    { id: "design", label: "🎨 Commercial Design & Creative (4)" }
   ],
   projects: [
+    // --- PILAR 1: PAID TRAFFIC & ADS GROWTH (5 PROYEK) ---
     {
       id: "proj-1",
       category: "ads",
       featured: true,
       title: "Meta Ads Scaling — Herbal Health Products",
-      subtitle: "Paid Traffic Acquisition & Budget Allocation",
-      metrics: "3.5x – 10.0x ROAS • Budget Scaling",
-      description: "Restructured ad campaigns across creative variations, custom lookalikes, and broad demographic targeting to scale revenue while maintaining stable acquisition margins.",
+      subtitle: "CV Creaidea Innovation • Scale & Budget Allocation",
+      metrics: "3.5x–10.0x ROAS • IDR 600M–800M/Mo",
+      description: "Mengelola 20–35 kampanye harian pada 3–5 akun Meta Ads Manager dengan rata-rata alokasi budget bulanan hingga Rp200 juta. Menerapkan segmentasi broad, lookalike 1–3%, dan selective budget scaling yang menghasilkan omzet stabil Rp600M–800M/bulan.",
       image: "assets/images/ads_meta_1.jpeg",
-      tags: ["Meta Ads", "ROAS", "Performance Marketing"]
+      tags: ["Meta Ads", "Selective Scaling", "ROAS", "Performance Marketing"]
     },
     {
       id: "proj-2",
       category: "ads",
       featured: true,
-      title: "Shopee Marketplace Scaling — Pusat Herbal Indonesia",
-      subtitle: "Search Keyword Ads & Fast Chat Operations",
-      metrics: "IDR 100M Revenue • 4.8/5.0 Rating",
-      description: "Managed keyword bids during peak buyer hours and maintained a 92% chat response rate, growing the store from zero to IDR 100M revenue within its first six months.",
-      image: "assets/images/ads_shopee_1.png",
-      tags: ["Shopee Ads", "Marketplace", "E-Commerce"]
+      title: "Multi-Brand Agency Advertising — 7 Client Brands",
+      subtitle: "CV. Hasbuna Artha Niaga • Agency Advertiser",
+      metrics: "7 Client Brands • TikTok GMV Max & Marketplace",
+      description: "Mengelola 7 brand klien dari industri fashion, herbal, dan packaging dari 0. Merancang forecasting budget, eksekusi TikTok Ads (GMV Max) dan Marketplace Ads dengan pencapaian ROAS 3.5x sesuai target proyeksi brand.",
+      image: "assets/images/ads_tiktok_1.png",
+      tags: ["Agency", "TikTok Ads", "GMV Max", "Marketplace Ads", "Client Management"]
     },
     {
       id: "proj-3",
       category: "ads",
-      title: "TikTok Ads Campaign — Hap Hap Snack (FMCG)",
-      subtitle: "Short-Form Video Direct Response Ads",
-      metrics: "3.4% Link CTR • High Youth Engagement",
-      description: "Executed TikTok video ads using user-generated content (UGC) angles and interest segmentation to drive direct consumer purchase for packaged snacks.",
-      image: "assets/images/ads_tiktok_1.png",
-      tags: ["TikTok Ads", "FMCG", "Short Video"]
+      featured: true,
+      title: "E-Commerce Founder & Cross-Border Meta Ads",
+      subtitle: "Pusat Herbal Indonesia • Domestic & Global Market",
+      metrics: "Rp100M 6-Mo Shopee • Rp300M+ Meta Ads",
+      description: "Mendirikan operasional toko Shopee dari 0 hingga membukukan omzet Rp100 juta dalam 6 bulan pertama. Menjalankan kampanye Meta Ads untuk pasar Indonesia dan pasar internasional dengan akumulasi omzet Rp300 juta+, serta ekspansi cabang ke-2 (Pusat Herbal Asia).",
+      image: "assets/images/ads_shopee_1.png",
+      tags: ["Shopee Ads", "International Ads", "E-Commerce", "Meta Ads", "Growth"]
     },
     {
       id: "proj-4",
       category: "ads",
-      title: "Meta Ads Lead Generation — Dewanta Trans Tourism",
-      subtitle: "Private Charter & Travel Booking Inquiries",
-      metrics: "Low Cost per Lead • Direct WhatsApp Redirect",
-      description: "Targeted family and group vacationers in regional cities with direct WhatsApp inquiry ads for tourism shuttle and private transportation services.",
-      image: "assets/images/ads_dewanta.jpeg",
-      tags: ["Meta Ads", "Lead Generation", "Tourism"]
+      title: "Selective Scaling Multi-Channel Advertising",
+      subtitle: "Chefpreneur Vania Wijaya • Growth Advertiser",
+      metrics: "30% Sales Lift • Selective Scaling Strategy",
+      description: "Merancang strategi kampanye digital terpadu melalui Meta Ads, TikTok Ads, dan Marketplace Ads (Shopee & Tokopedia). Menerapkan strategi selective scaling untuk mengunci ROAS stabil sepanjang bulan dan meningkatkan penjualan pelanggan baru sebesar 30%.",
+      image: "assets/images/ads_meta_1.jpeg",
+      tags: ["Selective Scaling", "Multi-Channel", "TikTok Ads", "Shopee Ads"]
     },
     {
       id: "proj-5",
-      category: "cs",
-      featured: true,
-      title: "Customer Service Team Supervision — CV Creaidea Innovation",
-      subtitle: "Daily Lead Management & Closing Optimization",
-      metrics: "87% Closing Rate • 25% Monthly Revenue Lift",
-      description: "Supervised 5 CS specialists handling 80–120 daily WhatsApp inquiries. Developed structured objection-handling scripts to answer common pricing and shipping questions.",
-      image: "assets/images/cs_dashboard_1.jpeg",
-      tags: ["Leadership", "Closing Rate", "SOP"]
+      category: "ads",
+      title: "Lead Generation & WhatsApp Funnel Booking",
+      subtitle: "Dewanta Trans Travel • A/B Creative Testing",
+      metrics: "80% Conversion Rate • A/B Creative Split",
+      description: "Mengeksekusi kampanye Meta Ads untuk reservasi travel dan carter pariwisata. Menjalankan pengujian A/B materi kreatif harian (5–10 konten) serta perbandingan form vs tombol WhatsApp yang mendongkrak tingkat konversi dari 65% menjadi 80%.",
+      image: "assets/images/ads_dewanta.jpeg",
+      tags: ["Lead Gen", "Meta Ads", "A/B Testing", "WhatsApp Funnel", "Tourism"]
     },
+
+    // --- PILAR 2: CUSTOMER OPERATIONS & CRM (4 PROYEK) ---
     {
       id: "proj-6",
       category: "cs",
-      title: "Operational Timetable & Shift Coordination",
-      subtitle: "Workflow Management for 5 CS Specialists",
-      metrics: "Zero Unanswered Chats • 92% Response Rate",
-      description: "Designed shift schedules, follow-up timetables, and whiteboard task allocations to prevent inquiry bottlenecks during peak traffic hours.",
-      image: "assets/images/cs_timetable.jpeg",
-      tags: ["Workflow", "Operations", "Team Management"]
+      featured: true,
+      title: "Supervisi Tim 5 CS & Rekor Closing Rate 87%",
+      subtitle: "CV Creaidea Innovation • Best CS Performance 2024",
+      metrics: "87% Closing Rate • Rp200M–300M Revenue Lift",
+      description: "Memimpin 5 staf spesialis CS yang menangani 80–120 pesan WhatsApp harian. Menyusun modul objection handling untuk harga dan pengiriman, mencapai rekor closing rate divisi 87%, meraih penghargaan Best Customer Service Performance 2024, dan menaikkan omzet divisi 20–25%.",
+      image: "assets/images/cs_dashboard_1.jpeg",
+      tags: ["Leadership", "Closing Rate", "Objection Handling", "Revenue Lift", "WhatsApp CRM"]
     },
     {
       id: "proj-7",
-      category: "design",
-      title: "Premier League Matchday Sports Poster",
-      subtitle: "Athletic Editorial Graphic Design",
-      metrics: "High-Resolution • Print & Social Media Ready",
-      description: "Commercial sports poster exploring high-contrast bold typography, dynamic athlete lighting, and professional football match announcement layout.",
-      image: "assets/images/design_poster_1.jpg",
-      tags: ["Graphic Design", "Photoshop", "Sports Poster"]
+      category: "cs",
+      featured: true,
+      title: "Marketplace Chat SLA & Order Fulfillment",
+      subtitle: "Pusat Herbal Indonesia • E-Commerce CS Operations",
+      metrics: "92% Chat Response • 4.8/5.0 Store Rating",
+      description: "Mengelola alur customer service toko e-commerce, memproses 20+ pesanan setiap hari dengan respons chat 92% dan kepuasan rating toko 4.8/5.0. Bertanggung jawab atas stock control, fulfillment cepat, dan koordinasi logistik pengiriman se-Indonesia.",
+      image: "assets/images/ads_shopee_1.png",
+      tags: ["Marketplace SLA", "Order Fulfillment", "Customer Retention", "Logistics"]
     },
     {
       id: "proj-8",
-      category: "design",
-      title: "Championship Celebration Poster — Triple Winner Stadium",
-      subtitle: "Multi-Competition Trophy Celebration Artwork",
-      metrics: "Gold Palette Grading • Event Branding",
-      description: "Commemorative poster artwork blending stadium lighting, celebratory gold tones, and clear typographic hierarchy for football tournament winners.",
-      image: "assets/images/design_poster_2.jpg",
-      tags: ["Branding", "Creative Composition", "Editorial"]
+      category: "cs",
+      title: "Penyusunan Shift Timetable & Alur Kerja 5 Staf",
+      subtitle: "Whiteboard Task Allocation & Zero Inquiry Bottlenecks",
+      metrics: "0 Chat Bottlenecks • 5 Staff Shifts",
+      description: "Merancang jadwal piket shift operasional dan timetable tindak lanjut (follow-up) berbasis whiteboard koordinasi. Memastikan respon cepat pada jam sibuk traffic iklan berbayar tanpa ada lead yang terabaikan.",
+      image: "assets/images/cs_timetable.jpeg",
+      tags: ["Timetable", "Workflow SOP", "Resource Planning", "Team Operations"]
     },
     {
       id: "proj-9",
-      category: "design",
-      title: "Champions Borcelle Football Club Poster",
-      subtitle: "Minimalist Club Honor Artwork",
-      metrics: "Official Social Media Format",
-      description: "Clean vector layout and athlete photo manipulation celebrating tournament victory for Borcelle Football Club.",
-      image: "assets/images/design_poster_3.jpg",
-      tags: ["Visual Design", "Sports Branding", "Poster"]
+      category: "cs",
+      title: "Validasi Database Pelanggan & Rekonsiliasi Logistik",
+      subtitle: "Chefpreneur Vania Wijaya • Data Accuracy & CRM",
+      metrics: "95% Data Accuracy • 30–50 Orders/Day",
+      description: "Mengelola penginputan dan verifikasi 30–50 data transaksi pelanggan per hari ke sistem logistik dan jasa kirim. Menjaga akurasi data hingga 95% guna menekan tingkat retur paket dan mempercepat perputaran pesanan.",
+      image: "assets/images/cs_dashboard_1.jpeg",
+      tags: ["Data Validation", "CRM Entry", "Logistics", "Operational Accuracy"]
     },
+
+    // --- PILAR 3: COMMERCIAL DESIGN & CREATIVE (4 PROYEK) ---
     {
       id: "proj-10",
-      category: "media",
+      category: "design",
+      featured: true,
+      title: "Produksi Materi Iklan Harian (Ads Visual & Video)",
+      subtitle: "High-Converting Direct Response Creative Assets",
+      metrics: "8–16 Creatives/Day • Image & Short Video",
+      description: "Memproduksi 8–16 materi visual dan video pendek setiap hari menggunakan Adobe Photoshop, Canva, dan CapCut untuk kebutuhan A/B testing kampanye iklan digital berbayar (Meta & TikTok Ads). Mengutamakan visual hook kuat dan readability optimal.",
+      image: "assets/images/design_poster_1.jpg",
+      tags: ["Ads Creative", "Photoshop", "Direct Response", "CapCut", "A/B Testing"]
+    },
+    {
+      id: "proj-11",
+      category: "design",
+      featured: true,
+      title: "Premier League Matchday Sports Commercial Poster",
+      subtitle: "Athletic Editorial Graphic Design & Typography",
+      metrics: "High-Resolution • Print & Social Media Ready",
+      description: "Desain poster komersial sepak bola yang mengeksplorasi hierarki tipografi tegas, efek pencahayaan atletik dramatis, dan komposisi visual bertenaga tinggi untuk materi promosi laga kompetisi olahraga.",
+      image: "assets/images/design_poster_1.jpg",
+      tags: ["Graphic Design", "Photoshop", "Sports Poster", "Typography"]
+    },
+    {
+      id: "proj-12",
+      category: "design",
+      title: "Championship Celebration Poster — Triple Winner Stadium",
+      subtitle: "Multi-Competition Trophy Celebration Artwork",
+      metrics: "Gold Palette Grading • Stadium Visual Depth",
+      description: "Karya seni visual perayaan gelar juara turnamen dengan perpaduan tata cahaya stadion megah, grading warna emas eksklusif, dan penataan elemen grafis monumental yang memancarkan aura kemenangan.",
+      image: "assets/images/design_poster_2.jpg",
+      tags: ["Visual Art", "Gold Grading", "Event Branding", "Photoshop"]
+    },
+    {
+      id: "proj-13",
+      category: "design",
+      title: "Champions Borcelle Football Club Poster",
+      subtitle: "Minimalist Club Honor & Identity Artwork",
+      metrics: "Vector & Photo Manipulation • Social Media",
+      description: "Komposisi visual modern menggabungkan elemen vektor minimalis dan manipulasi foto atlet untuk perayaan kemenangan klub sepak bola Borcelle dalam format media sosial resmi.",
+      image: "assets/images/design_poster_3.jpg",
+      tags: ["Vector Layout", "Sports Branding", "Poster", "Creative"]
+    }
+  ],
+
+  // 📰 EDITORIAL, PUBLISHED MEDIA & ACADEMIC WORKS (SEKSI KHUSUS SOCIAL PROOF)
+  editorialProjects: [
+    {
+      id: "ed-1",
       title: "Published Field Journalism — Harian Republika & RM.id",
-      subtitle: "10 Verified Investigative Articles & News Reports",
+      subtitle: "10 Verified Investigative Articles & Regional Reports",
       metrics: "10 Published Reports • Republika Jogja & TV",
-      description: "Conducted field interviews, verified sources, and published 10 official news reports covering regional socioeconomic relocation, higher education policies, cultural conferences, and humanitarian initiatives.",
+      description: "Melakukan investigasi lapangan, riset narasumber berimbang, dan mempublikasikan 10 liputan berita resmi di media nasional Republika Jogja, Republika TV, dan RM.id mencakup isu relokasi pedagang Malioboro, kebijakan pendidikan tinggi, dan aksi solidaritas kemanusiaan.",
       image: "",
       icon: "fa-solid fa-newspaper",
-      tags: ["Journalism", "Field Reporting", "Published Media", "Fact-Checking"],
+      tags: ["Investigative Journalism", "Field Reporting", "Published Media", "Fact-Checking"],
       links: [
         {
           title: "Gelar Aksi Solidaritas Bela Palestina, Mahasiswa UII Sampaikan Lima Sikap Tegas",
@@ -278,12 +327,11 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
-      id: "proj-11",
-      category: "media",
+      id: "ed-2",
       title: "Commercial Film & Video Production",
       subtitle: "Assistant Directing & Commercial Producing",
-      metrics: "Commercial Ads & Music Video • YouTube",
-      description: "Managed video shoot logistics, creative storytelling, talent directing, and client delivery for commercial products and narrative music videos broadcasted on YouTube.",
+      metrics: "Commercial Ads & Music Video • YouTube Works",
+      description: "Mengelola logistik produksi, storytelling visual, penyutradaraan bakat, dan pascaproduksi untuk video musik resmi LANGIT SORE ('Cinta Hanya Cerita Luka'), film pendek 'HOPE', iklan komersial Dokter Susu Sapi, dan Iklan Layanan Masyarakat GEGABAH.",
       image: "",
       icon: "fa-solid fa-film",
       tags: ["Video Production", "Assistant Director", "Producer", "YouTube Works"],
@@ -309,12 +357,11 @@ window.PORTFOLIO_DATA = {
       ]
     },
     {
-      id: "proj-12",
-      category: "media",
+      id: "ed-3",
       title: "Academic Recognition — Best Graduate Award (Cum Laude)",
       subtitle: "Department of Communication Science, Universitas Amikom Yogyakarta",
       metrics: "GPA 3.81 • Best Graduate Honor Period 93",
-      description: "Conferred the Best Graduate Honor in the Department of Communication Science with a 3.81 Cumulative GPA. Celebrated for high-distinction coursework and published communication research.",
+      description: "Dianugerahi predikat Wisudawan Terbaik Program Studi Ilmu Komunikasi Universitas Amikom Yogyakarta dengan IPK 3.81 (Cum Laude). Menunjukkan penguasaan mendalam dalam riset komunikasi terapan, analisis pesan persuasif, dan etika profesi.",
       image: "",
       icon: "fa-solid fa-graduation-cap",
       tags: ["Academic Honor", "Best Graduate", "Communication Science", "Amikom"],

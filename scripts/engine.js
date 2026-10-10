@@ -300,7 +300,7 @@ function renderPortfolio(categories, projects) {
       <div class="section-header">
         <span class="section-tag">Work Showcase</span>
         <h2 class="section-title">Projects & Portfolio</h2>
-        <p class="section-subtitle">Tangible campaign deliverables, lead management workflows, commercial design compositions, and verified reporting.</p>
+        <p class="section-subtitle">Tiga pilar keahlian komersial: Akuisisi traffic berbayar multi-channel, kepemimpinan operasional closing tim CS, dan perancangan materi visual komersial.</p>
       </div>
 
       <div class="filter-tabs" id="portfolio-tabs">
@@ -313,6 +313,23 @@ function renderPortfolio(categories, projects) {
 
       <div id="portfolio-actions-slot">
         <!-- Rendered via interactions.js -->
+      </div>
+
+      <!-- 📰 OPSI A: EDITORIAL, PUBLISHED MEDIA & ACADEMIC SHOWCASE -->
+      <div class="editorial-showcase-box" id="editorial-showcase-box">
+        <div class="editorial-showcase-header">
+          <div class="editorial-badge">
+            <i class="fa-solid fa-newspaper"></i> Editorial & Communication Distinctions
+          </div>
+          <h3 class="editorial-showcase-title">Published Field Journalism & Production Works</h3>
+          <p class="editorial-showcase-subtitle">
+            Bukti kecakapan komunikasi formal: 10 liputan investigasi lapangan terbit resmi di Harian Republika & RM.id, produksi video komersial siar YouTube, serta kehormatan akademik Wisudawan Terbaik Amikom (IPK 3.81).
+          </p>
+        </div>
+
+        <div class="editorial-grid" id="editorial-grid">
+          <!-- Rendered via interactions.js -->
+        </div>
       </div>
     </div>
   `;

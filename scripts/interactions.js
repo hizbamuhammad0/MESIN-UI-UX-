@@ -11,8 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const data = window.PORTFOLIO_DATA;
   if (!data || !data.projects) return;
 
-  // Render initial projects: Default to 'featured' (Top 3 Flagship Highlights)
-  renderFilteredProjects('featured');
+  // Render initial projects: Default to Pillar 1 ('ads' — Paid Traffic & Ads Growth)
+  renderFilteredProjects('ads');
+
+  // Render Editorial & Published Media Showcase (Opsi A)
+  renderEditorialShowcase();
 
   // Category Filter Tabs Event Listeners
   const tabButtons = document.querySelectorAll('.tab-btn');
@@ -31,12 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const categoryNameMap = {
-  featured: 'Flagship Highlights',
-  ads: 'Paid Traffic & Growth',
-  cs: 'Customer Operations',
-  design: 'Commercial Design',
-  media: 'Media & Journalism',
-  all: 'All Projects'
+  ads: 'Paid Traffic & Ads Growth',
+  cs: 'Customer Operations & CRM',
+  design: 'Commercial Design & Creative'
+};
+
+const pillarSummaryMap = {
+  ads: 'Menampilkan 5 portofolio akuisisi traffic berbayar: Meta Ads skala besar (Rp200M spend/bln), Agency 7 Brand Klien TikTok GMV Max, Founder E-Commerce Cross-Border, Selective Scaling, dan Funnel Reservasi WhatsApp.',
+  cs: 'Menampilkan 4 sistem operasional layanan pelanggan: Supervisi Tim 5 Staf CS (Closing 87%), Marketplace Chat SLA 92%, Shift Timetable Whiteboard, dan Validasi Database Pelanggan Akurasi 95%.',
+  design: 'Menampilkan 4 deliverable desain grafis komersial: Produksi 8–16 materi kreatif ads harian (image & video), Poster Premier League Matchday, Karya Seni Perayaan Juara, dan Borcelle FC Identity.'
 };
 
 function renderFilteredProjects(category) {
@@ -46,17 +52,10 @@ function renderFilteredProjects(category) {
 
   const projects = window.PORTFOLIO_DATA?.projects || [];
   
-  let filtered = [];
-  if (category === 'featured') {
-    filtered = projects.filter(p => p.featured === true);
-  } else if (category === 'all') {
-    filtered = projects;
-  } else {
-    filtered = projects.filter(p => p.category === category);
-  }
+  const filtered = projects.filter(p => p.category === category);
 
   // Render Project Cards Grid
-  grid.innerHTML = filtered.map(p => {
+  grid.innerHTML = (filtered.length > 0 ? filtered : projects).map(p => {
     const categoryLabel = categoryNameMap[p.category] || p.category;
     const safeDesc = (p.description || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
     const safeTitle = (p.title || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
@@ -68,7 +67,7 @@ function renderFilteredProjects(category) {
       ? `
         <div class="project-thumb-box">
           <img src="${p.image}" alt="${p.title}" class="project-thumb" loading="lazy" />
-          ${isFeatured ? '<div class="flagship-badge">★ Flagship Impact</div>' : ''}
+          ${isFeatured ? '<div class="flagship-badge">★ Core Deliverable</div>' : ''}
           ${p.metrics ? `<div class="project-pill-metric">${p.metrics}</div>` : ''}
         </div>
       `
@@ -105,46 +104,56 @@ function renderFilteredProjects(category) {
     `;
   }).join('');
 
-  // Render Actions & Counter Slot
+  // Render Actions & Summary
   if (actionsSlot) {
-    if (category === 'featured') {
-      actionsSlot.innerHTML = `
-        <div class="portfolio-actions">
-          <button class="btn btn-primary" onclick="switchPortfolioTab('all')">
-            <i class="fa-solid fa-layer-group"></i> Browse All Projects (${projects.length}) ↓
-          </button>
-        </div>
-        <div class="portfolio-counter">
-          Showing 3 flagship case studies with highest revenue & conversion impact.
-        </div>
-      `;
-    } else if (category === 'all') {
-      actionsSlot.innerHTML = `
-        <div class="portfolio-actions">
-          <button class="btn btn-outline" onclick="switchPortfolioTab('featured')">
-            <i class="fa-solid fa-star"></i> Collapse to Flagship Highlights (3) ↑
-          </button>
-        </div>
-        <div class="portfolio-counter">
-          Showing all ${projects.length} verified project deliverables across all disciplines.
-        </div>
-      `;
-    } else {
-      actionsSlot.innerHTML = `
-        <div class="portfolio-actions">
-          <button class="btn btn-outline btn-sm" onclick="switchPortfolioTab('featured')">
-            <i class="fa-solid fa-arrow-left"></i> Back to Flagship Highlights
-          </button>
-          <button class="btn btn-outline btn-sm" onclick="switchPortfolioTab('all')">
-            View All Projects (${projects.length}) →
-          </button>
-        </div>
-        <div class="portfolio-counter">
-          Showing ${filtered.length} deliverables under "${categoryNameMap[category] || category}".
-        </div>
-      `;
-    }
+    actionsSlot.innerHTML = `
+      <div class="portfolio-counter">
+        <i class="fa-solid fa-circle-check" style="color: var(--accent); margin-right: 6px;"></i>
+        ${pillarSummaryMap[category] || `Menampilkan ${filtered.length} deliverable pada pilar ini.`}
+      </div>
+    `;
   }
+}
+
+// 📰 Render Seksi Opsi A: Editorial, Published Media & Academic Distinctions
+function renderEditorialShowcase() {
+  const grid = document.getElementById('editorial-grid');
+  if (!grid) return;
+
+  const editorials = window.PORTFOLIO_DATA?.editorialProjects || [];
+  grid.innerHTML = editorials.map(e => {
+    const safeDesc = (e.description || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    const safeTitle = (e.title || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    const hasLinks = e.links && e.links.length > 0;
+
+    return `
+      <div class="project-card editorial-card fade-in" onclick="openLightbox('${e.image || ''}', '${safeTitle}', '${safeDesc}', '${e.id}')">
+        <div class="editorial-header-bar">
+          <div class="editorial-icon-badge">
+            <i class="${e.icon || 'fa-solid fa-file-lines'}"></i>
+          </div>
+          ${e.metrics ? `<div class="editorial-metric-pill">${e.metrics}</div>` : ''}
+        </div>
+        <div class="project-content">
+          <span class="project-category-tag">Verified Communication Distinctions</span>
+          <h3 class="project-title">${e.title}</h3>
+          <p class="project-subtitle">${e.subtitle}</p>
+          <p class="project-desc">${e.description}</p>
+          <div class="project-tags">
+            ${(e.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}
+          </div>
+          ${hasLinks ? `
+            <div class="project-card-footer">
+              <span class="project-links-badge">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> ${e.links.length} Berkas Publikasi & Video
+              </span>
+              <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent);">Buka Arsip ↗</span>
+            </div>
+          ` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
 }
 
 // 🔀 Global Tab Switcher Function
@@ -156,12 +165,6 @@ window.switchPortfolioTab = function(categoryId) {
     targetBtn.classList.add('active');
     
     renderFilteredProjects(categoryId);
-
-    // Smooth scroll to portfolio section header
-    const portfolioSec = document.getElementById('portfolio');
-    if (portfolioSec) {
-      portfolioSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
   }
 };
 
@@ -194,7 +197,8 @@ window.openLightbox = function(imageSrc, title, desc, projectId) {
     modalExtra.innerHTML = '';
 
     if (projectId) {
-      const project = window.PORTFOLIO_DATA?.projects?.find(p => p.id === projectId);
+      const project = window.PORTFOLIO_DATA?.projects?.find(p => p.id === projectId)
+        || window.PORTFOLIO_DATA?.editorialProjects?.find(p => p.id === projectId);
       if (project && project.links && project.links.length > 0) {
         const typeIconMap = {
           news: 'fa-solid fa-newspaper',
