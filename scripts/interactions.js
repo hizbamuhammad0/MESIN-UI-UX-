@@ -178,6 +178,10 @@ window.openLightbox = function(imageSrc, title, desc, projectId) {
 
   if (!modal) return;
 
+  // Reset scroll to top so content is immediately centered and viewed from the beginning
+  const modalCard = modal.querySelector('.modal-card');
+  if (modalCard) modalCard.scrollTop = 0;
+
   // Adaptive Image Display: Hide completely if no image or empty string
   if (modalImg) {
     if (imageSrc && imageSrc.trim() !== '') {
