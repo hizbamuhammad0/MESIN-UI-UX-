@@ -103,9 +103,9 @@ window.PORTFOLIO_DATA = {
 
   // 📁 3. WORK SHOWCASE (3 CORE COMMERCIAL PILLARS)
   categories: [
-    { id: "ads", label: "🚀 Paid Traffic & Ads Growth (5)" },
-    { id: "cs", label: "💬 Customer Operations & CRM (4)" },
-    { id: "design", label: "🎨 Commercial Design & Creative (4)" }
+    { id: "ads", label: "🚀 Paid Traffic & Ads Growth" },
+    { id: "cs", label: "💬 Customer Operations & CRM" },
+    { id: "design", label: "🎨 Commercial Design & Creative" }
   ],
   projects: [
     // --- PILAR 1: PAID TRAFFIC & ADS GROWTH (5 PROYEK) ---
