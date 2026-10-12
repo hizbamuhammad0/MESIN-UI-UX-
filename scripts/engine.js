@@ -345,22 +345,22 @@ function renderPortfolio(categories, projects) {
     <div class="container section" id="portfolio">
       <div class="section-header">
         <span class="section-tag">Work Showcase</span>
-        <h2 class="section-title">3 Core Specialization Layers</h2>
+        <h2 class="section-title">Core Specializations</h2>
         <p class="section-subtitle">
-          Arsitektur portofolio komersial terpadu: Layer 1 Akuisisi Traffic Iklan Berbayar Multi-Channel (Meta, Shopee, TikTok), Layer 2 Operasional Layanan Pelanggan & Supervisi Tim CS (Omzet 700-800 Juta & Rekor Closing 87%), dan Layer 3 Perancangan Materi Visual Grafis Komersial.
+          Portofolio profesional terintegrasi: Akuisisi traffic iklan berbayar multi-channel (Meta, Shopee, TikTok), operasional layanan pelanggan & supervisi tim CS (Omzet 700–800 Juta & rekor closing 87%), serta perancangan materi visual grafis komersial.
         </p>
       </div>
 
-      <!-- Quick Jump Layer Navigation Pills -->
+      <!-- Quick Jump Navigation Pills -->
       <div class="layer-nav-pills">
         <a href="#layer-ads" class="layer-nav-btn">
-          <i class="fa-solid fa-rocket"></i> Layer 1: Paid Advertising (Meta, Shopee, TikTok)
+          <i class="fa-solid fa-rocket"></i> Paid Advertising (Meta, Shopee, TikTok)
         </a>
         <a href="#layer-cs" class="layer-nav-btn">
-          <i class="fa-solid fa-crown"></i> Layer 2: Customer Operations & Leadership
+          <i class="fa-solid fa-crown"></i> Customer Operations & Leadership
         </a>
         <a href="#layer-design" class="layer-nav-btn">
-          <i class="fa-solid fa-palette"></i> Layer 3: Commercial Graphic Design
+          <i class="fa-solid fa-palette"></i> Commercial Graphic Design
         </a>
         <a href="#editorial-showcase-box" class="layer-nav-btn">
           <i class="fa-solid fa-newspaper"></i> Editorial & Academic Distinctions
@@ -368,12 +368,12 @@ function renderPortfolio(categories, projects) {
       </div>
 
       <!-- ==================================================================
-       * 🚀 LAYER 1: PAID ADVERTISING & MULTI-CHANNEL ADS SCALING
+       * 🚀 PAID ADVERTISING & MULTI-CHANNEL ADS SCALING
        * ================================================================== -->
       <div class="layer-section" id="layer-ads">
         <div class="layer-banner">
           <div class="layer-tag">
-            <i class="fa-solid fa-rocket"></i> LAYER 1 • PRIMARY SPECIALIZATION
+            <i class="fa-solid fa-rocket"></i> PAID ADVERTISING & PERFORMANCE MARKETING
           </div>
           <h3 class="layer-title">Paid Advertising & Multi-Channel Ads Scaling</h3>
           <p class="layer-subtitle">
@@ -419,12 +419,12 @@ function renderPortfolio(categories, projects) {
       </div>
 
       <!-- ==================================================================
-       * 👑 LAYER 2: CUSTOMER OPERATIONS & TEAM LEADERSHIP
+       * 👑 CUSTOMER OPERATIONS & TEAM LEADERSHIP
        * ================================================================== -->
       <div class="layer-section" id="layer-cs">
         <div class="layer-banner">
           <div class="layer-tag">
-            <i class="fa-solid fa-crown"></i> LAYER 2 • OPERATIONAL EXCELLENCE & CLOSING STRATEGY
+            <i class="fa-solid fa-crown"></i> CUSTOMER OPERATIONS & TEAM LEADERSHIP
           </div>
           <h3 class="layer-title">Customer Operations, Team Leadership & High-Conversion Closing</h3>
           <p class="layer-subtitle">
@@ -458,12 +458,12 @@ function renderPortfolio(categories, projects) {
       </div>
 
       <!-- ==================================================================
-       * 🎨 LAYER 3: COMMERCIAL GRAPHIC DESIGN & CREATIVE ASSETS
+       * 🎨 COMMERCIAL GRAPHIC DESIGN & CREATIVE ASSETS
        * ================================================================== -->
       <div class="layer-section" id="layer-design">
         <div class="layer-banner">
           <div class="layer-tag">
-            <i class="fa-solid fa-palette"></i> LAYER 3 • VISUAL ASSETS & COMMERCIAL BRANDING
+            <i class="fa-solid fa-palette"></i> COMMERCIAL GRAPHIC DESIGN & VISUAL ASSETS
           </div>
           <h3 class="layer-title">Commercial Graphic Design & Production Creatives</h3>
           <p class="layer-subtitle">
