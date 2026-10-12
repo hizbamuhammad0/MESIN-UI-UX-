@@ -9,23 +9,25 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const data = window.PORTFOLIO_DATA;
-  if (!data || !data.projects) return;
-
-  // Render initial projects: Default to 'all' (All Portfolio)
-  renderFilteredProjects('all');
+  if (!data) return;
 
   // Render Editorial & Published Media Showcase (Opsi A)
   renderEditorialShowcase();
 
-  // Category Filter Tabs Event Listeners
-  const tabButtons = document.querySelectorAll('.tab-btn');
-  tabButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const category = btn.getAttribute('data-category');
-      renderFilteredProjects(category);
+  // 3-Layer Navigation Smooth Scroll & Active Indicator
+  const layerNavBtns = document.querySelectorAll('.layer-nav-btn');
+  layerNavBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const targetId = btn.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          layerNavBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        }
+      }
     });
   });
 

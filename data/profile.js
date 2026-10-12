@@ -26,7 +26,7 @@ window.PORTFOLIO_DATA = {
     socials: [
       { name: "WhatsApp", url: "https://wa.me/6287834203959", icon: "phone" },
       { name: "Email", url: "mailto:nessakamalika@gmail.com", icon: "mail" },
-      { name: "Instagram", url: "https://instagram.com/nessakamalika", icon: "instagram" },
+      { name: "Instagram", url: "https://www.instagram.com/nessaalika/", icon: "instagram" },
       { name: "LinkedIn", url: "https://linkedin.com/in/nessa-kamalika", icon: "linkedin" }
     ]
   },

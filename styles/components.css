@@ -614,49 +614,124 @@
 /* ==============================================================================
  * 📁 8. SELECTED WORK (PROJECTS & CASE STUDIES)
  * ============================================================================== */
-.filter-tabs {
+/* 📁 3-LAYER WORK SHOWCASE ARCHITECTURE */
+.layer-section {
+  margin-bottom: 5rem;
+  scroll-margin-top: 90px;
+}
+
+.layer-nav-pills {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-md);
-  margin-bottom: var(--space-2xl);
+  gap: 12px;
+  margin-bottom: 3.5rem;
   flex-wrap: wrap;
 }
 
-.tab-btn {
+.layer-nav-btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
-  padding: 13px 26px;
+  padding: 12px 22px;
   background: var(--bg-surface);
   border: 2px solid var(--border-medium);
   border-radius: var(--radius-md);
   color: var(--text-secondary);
   font-family: var(--font-display);
-  font-size: 1.02rem;
+  font-size: 0.95rem;
   font-weight: 700;
+  text-decoration: none;
   cursor: pointer;
   transition: all var(--transition-fast);
 }
 
-.tab-btn:hover {
+.layer-nav-btn:hover {
   color: var(--text-primary);
   border-color: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
 }
 
-.tab-btn.active {
-  background: var(--accent);
-  color: var(--text-invert);
-  border-color: var(--accent);
-  box-shadow: 0 4px 16px var(--accent-glow), var(--shadow-pop);
-  transform: translateY(-2px);
-}
-
-.tab-btn:active {
+.layer-nav-btn:active {
   transform: translateY(0);
+}
+
+.layer-banner {
+  background: linear-gradient(135deg, rgba(16, 22, 36, 0.98) 0%, rgba(9, 12, 21, 0.92) 100%);
+  border: 2px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: 2.2rem 2.5rem;
+  margin-bottom: 2.2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.layer-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: var(--accent);
+}
+
+.layer-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.layer-title {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.layer-subtitle {
+  font-size: 0.96rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 950px;
+}
+
+.layer-channel-box {
+  margin-bottom: 2.5rem;
+}
+
+.layer-channel-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 2.2rem 0 1.25rem 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.layer-channel-heading i {
+  color: var(--accent);
+}
+
+.layer-channel-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  color: var(--accent-light);
 }
 
 .portfolio-grid {
@@ -1504,18 +1579,37 @@
     object-fit: cover;
   }
 
-  /* Work Showcase & Tabs */
-  .filter-tabs {
+  /* Work Showcase & 3 Layers */
+  .layer-section {
+    margin-bottom: 3.5rem;
+  }
+  .layer-nav-pills {
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 2.2rem;
     width: 100%;
   }
-  .tab-btn {
-    padding: 13px 20px;
-    font-size: 0.95rem;
+  .layer-nav-btn {
+    padding: 13px 18px;
+    font-size: 0.92rem;
     width: 100%;
     justify-content: center;
+    box-sizing: border-box;
+  }
+  .layer-banner {
+    padding: 1.5rem 1.25rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.5rem;
+  }
+  .layer-title {
+    font-size: 1.35rem;
+  }
+  .layer-subtitle {
+    font-size: 0.88rem;
+  }
+  .layer-channel-heading {
+    font-size: 1.05rem;
+    margin: 1.8rem 0 1rem 0;
   }
   .portfolio-grid {
     grid-template-columns: 1fr;

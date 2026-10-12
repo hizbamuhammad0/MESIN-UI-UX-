@@ -286,34 +286,201 @@ function renderCertifications(certs) {
 /* ==============================================================================
  * 📁 7. SELECTED WORK (PROJECTS & CASE STUDIES) — USER ORDER 3
  * ============================================================================== */
+/* ==============================================================================
+ * 📁 7. SELECTED WORK (3-LAYER WORK SHOWCASE ARCHITECTURE) — USER ORDER 3
+ * ============================================================================== */
+function renderProjectCardHtml(p) {
+  const safeDesc = (p.description || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+  const safeTitle = (p.title || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+  const isFeatured = p.featured === true;
+  const hasImage = p.image && p.image.trim() !== '';
+
+  return `
+    <div class="project-card ${hasImage ? '' : 'editorial-card'} fade-in" onclick="openLightbox('${p.image || ''}', '${safeTitle}', '${safeDesc}', '${p.id}')">
+      ${hasImage ? `
+        <div class="project-thumb-box">
+          <img src="${p.image}" alt="${p.title}" class="project-thumb" loading="lazy" />
+          ${isFeatured ? '<div class="flagship-badge">★ Core Deliverable</div>' : ''}
+          ${p.metrics ? `<div class="project-pill-metric">${p.metrics}</div>` : ''}
+        </div>
+      ` : `
+        <div class="editorial-header-bar">
+          <div class="editorial-icon-badge">
+            <i class="${p.icon || 'fa-solid fa-file-lines'}"></i>
+          </div>
+          ${p.metrics ? `<div class="editorial-metric-pill">${p.metrics}</div>` : ''}
+        </div>
+      `}
+      <div class="project-info">
+        <h3 class="project-title">${p.title}</h3>
+        ${p.subtitle ? `<div class="project-client">${p.subtitle}</div>` : ''}
+        <p class="project-desc">${p.description}</p>
+        <div class="project-tags">
+          ${(p.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 function renderPortfolio(categories, projects) {
   const slot = document.getElementById('portfolio-slot');
   if (!slot) return;
 
-  const tabsHtml = (categories || []).map((cat, idx) => `
-    <button class="tab-btn ${idx === 0 ? 'active' : ''}" data-category="${cat.id}">
-      ${cat.label}
-    </button>
-  `).join('');
+  const projs = projects || window.PORTFOLIO_DATA?.projects || [];
+
+  // Groupings for Layer 1 (Paid Advertising)
+  const metaAds = projs.filter(p => p.category === 'ads' && (p.title.includes('Meta') || p.tags?.includes('Meta Ads') || p.tags?.includes('Lead Gen')));
+  const shopeeAds = projs.filter(p => p.category === 'ads' && (p.title.includes('Shopee') || p.tags?.includes('Shopee Ads')));
+  const tiktokAds = projs.filter(p => p.category === 'ads' && (p.title.includes('TikTok') || p.tags?.includes('TikTok Ads')));
+
+  // Groupings for Layer 2 (Customer Operations & Leadership)
+  const leaderCS = projs.filter(p => p.category === 'leader');
+  const staffCS = projs.filter(p => p.category === 'cs');
+
+  // Groupings for Layer 3 (Commercial Graphic Design)
+  const designProjs = projs.filter(p => p.category === 'design');
 
   slot.innerHTML = `
     <div class="container section" id="portfolio">
       <div class="section-header">
         <span class="section-tag">Work Showcase</span>
-        <h2 class="section-title">Projects & Portfolio</h2>
-        <p class="section-subtitle">Keahlian komersial terpadu: Periklanan berbayar multi-channel (Meta, TikTok, Shopee), kepemimpinan operasional tim CS & omzet 700-800 juta, penanganan closing rate 87%, serta perancangan materi visual komersial.</p>
+        <h2 class="section-title">3 Core Specialization Layers</h2>
+        <p class="section-subtitle">
+          Arsitektur portofolio komersial terpadu: Layer 1 Akuisisi Traffic Iklan Berbayar Multi-Channel (Meta, Shopee, TikTok), Layer 2 Operasional Layanan Pelanggan & Supervisi Tim CS (Omzet 700-800 Juta & Rekor Closing 87%), dan Layer 3 Perancangan Materi Visual Grafis Komersial.
+        </p>
       </div>
 
-      <div class="filter-tabs" id="portfolio-tabs">
-        ${tabsHtml}
+      <!-- Quick Jump Layer Navigation Pills -->
+      <div class="layer-nav-pills">
+        <a href="#layer-ads" class="layer-nav-btn">
+          <i class="fa-solid fa-rocket"></i> Layer 1: Paid Advertising (Meta, Shopee, TikTok)
+        </a>
+        <a href="#layer-cs" class="layer-nav-btn">
+          <i class="fa-solid fa-crown"></i> Layer 2: Customer Operations & Leadership
+        </a>
+        <a href="#layer-design" class="layer-nav-btn">
+          <i class="fa-solid fa-palette"></i> Layer 3: Commercial Graphic Design
+        </a>
+        <a href="#editorial-showcase-box" class="layer-nav-btn">
+          <i class="fa-solid fa-newspaper"></i> Editorial & Academic Distinctions
+        </a>
       </div>
 
-      <div class="portfolio-grid" id="portfolio-grid">
-        <!-- Rendered via interactions.js -->
+      <!-- ==================================================================
+       * 🚀 LAYER 1: PAID ADVERTISING & MULTI-CHANNEL ADS SCALING
+       * ================================================================== -->
+      <div class="layer-section" id="layer-ads">
+        <div class="layer-banner">
+          <div class="layer-tag">
+            <i class="fa-solid fa-rocket"></i> LAYER 1 • PRIMARY SPECIALIZATION
+          </div>
+          <h3 class="layer-title">Paid Advertising & Multi-Channel Ads Scaling</h3>
+          <p class="layer-subtitle">
+            Pilar utama pertumbuhan bisnis: Perencanaan forecasting budget, eksekusi kampanye berbayar dari 0 hingga skala besar, serta alokasi anggaran bulanan hingga Rp200 juta yang menghasilkan omzet stabil Rp600M–800M/bulan dengan kestabilan ROAS 3.5x–50x.
+          </p>
+        </div>
+
+        <!-- 🔷 Sub-Channel: Meta Ads (Facebook & Instagram) -->
+        <div class="layer-channel-box">
+          <div class="layer-channel-heading">
+            <i class="fa-brands fa-meta"></i>
+            <span>Meta Ads Manager & Selective Scaling</span>
+            <span class="layer-channel-badge">${metaAds.length} Projects</span>
+          </div>
+          <div class="portfolio-grid">
+            ${metaAds.map(renderProjectCardHtml).join('')}
+          </div>
+        </div>
+
+        <!-- 🛍️ Sub-Channel: Shopee Ads & E-Commerce Store Scaling -->
+        <div class="layer-channel-box">
+          <div class="layer-channel-heading">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Shopee Ads & E-Commerce Store Scaling</span>
+            <span class="layer-channel-badge">${shopeeAds.length} Projects</span>
+          </div>
+          <div class="portfolio-grid">
+            ${shopeeAds.map(renderProjectCardHtml).join('')}
+          </div>
+        </div>
+
+        <!-- 🎵 Sub-Channel: TikTok Ads (GMV Max) & Agency Client Campaigns -->
+        <div class="layer-channel-box">
+          <div class="layer-channel-heading">
+            <i class="fa-brands fa-tiktok"></i>
+            <span>TikTok Ads (GMV Max) & Agency Multi-Brand Scaling</span>
+            <span class="layer-channel-badge">${tiktokAds.length} Projects</span>
+          </div>
+          <div class="portfolio-grid">
+            ${tiktokAds.map(renderProjectCardHtml).join('')}
+          </div>
+        </div>
       </div>
 
-      <div id="portfolio-actions-slot">
-        <!-- Rendered via interactions.js -->
+      <!-- ==================================================================
+       * 👑 LAYER 2: CUSTOMER OPERATIONS & TEAM LEADERSHIP
+       * ================================================================== -->
+      <div class="layer-section" id="layer-cs">
+        <div class="layer-banner">
+          <div class="layer-tag">
+            <i class="fa-solid fa-crown"></i> LAYER 2 • OPERATIONAL EXCELLENCE & CLOSING STRATEGY
+          </div>
+          <h3 class="layer-title">Customer Operations, Team Leadership & High-Conversion Closing</h3>
+          <p class="layer-subtitle">
+            Kepemimpinan operasional divisi, supervisi 5 staf CS, mitigasi objection handling, alur kedisiplinan shift whiteboard, serta pencapaian rekor closing rate 87% dan omzet ratusan juta rupiah.
+          </p>
+        </div>
+
+        <!-- 👑 Sub-Group: Team Leadership (Leader CS) -->
+        <div class="layer-channel-box">
+          <div class="layer-channel-heading">
+            <i class="fa-solid fa-people-roof"></i>
+            <span>Leader Customer Service & Supervisi Tim 5 Staf</span>
+            <span class="layer-channel-badge">${leaderCS.length} Deliverables</span>
+          </div>
+          <div class="portfolio-grid">
+            ${leaderCS.map(renderProjectCardHtml).join('')}
+          </div>
+        </div>
+
+        <!-- 💬 Sub-Group: Customer Service Specialist & Closing Performance -->
+        <div class="layer-channel-box">
+          <div class="layer-channel-heading">
+            <i class="fa-solid fa-comments"></i>
+            <span>Customer Service Specialist & Closing Performance</span>
+            <span class="layer-channel-badge">${staffCS.length} Deliverables</span>
+          </div>
+          <div class="portfolio-grid">
+            ${staffCS.map(renderProjectCardHtml).join('')}
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================================================================
+       * 🎨 LAYER 3: COMMERCIAL GRAPHIC DESIGN & CREATIVE ASSETS
+       * ================================================================== -->
+      <div class="layer-section" id="layer-design">
+        <div class="layer-banner">
+          <div class="layer-tag">
+            <i class="fa-solid fa-palette"></i> LAYER 3 • VISUAL ASSETS & COMMERCIAL BRANDING
+          </div>
+          <h3 class="layer-title">Commercial Graphic Design & Production Creatives</h3>
+          <p class="layer-subtitle">
+            Produksi 8–16 materi visual iklan harian (direct-response), poster komersial kompetisi olahraga resolusi tinggi, branding visual turnamen, dan perayaan gelar juara klub.
+          </p>
+        </div>
+
+        <div class="layer-channel-box">
+          <div class="layer-channel-heading">
+            <i class="fa-solid fa-brush"></i>
+            <span>High-Impact Sports Posters & Direct Response Creatives</span>
+            <span class="layer-channel-badge">${designProjs.length} Works</span>
+          </div>
+          <div class="portfolio-grid">
+            ${designProjs.map(renderProjectCardHtml).join('')}
+          </div>
+        </div>
       </div>
 
       <!-- 📰 OPSI A: EDITORIAL, PUBLISHED MEDIA & ACADEMIC SHOWCASE -->
