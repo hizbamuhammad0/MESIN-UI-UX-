@@ -49,146 +49,146 @@ window.PORTFOLIO_DATA = {
     { label: "National Competency", value: "BNSP Licensed", desc: "Digital Marketing (Valid to 2027)" }
   ],
 
-  // 💼 1. CAREER HISTORY (EXPERIENCE & EDUCATION) — 1 BISNIS SENDIRI + 6 PENGALAMAN KERJA + PENDIDIKAN
+  // 💼 1. CAREER HISTORY (EXPERIENCE & EDUCATION) — 1 VENTURE + 6 POSITIONS + EDUCATION
   experience: [
-    // 🏢 1 BISNIS SENDIRI
+    // 🏢 VENTURE / FOUNDER
     {
-      period: "Mar 2026 — Sekarang",
-      role: "Founder & Head of Operations (Bisnis Sendiri)",
-      company: "Pusat Herbal Indonesia (E-Commerce Shopee)",
-      desc: "Mendirikan dan memimpin operasional e-commerce obat herbal di platform Shopee hingga meraih omzet Rp100.000.000 dalam 6 bulan pertama, serta mempersiapkan ekspansi cabang ke-2 (Pusat Herbal Asia). Merancang strategi digital marketing Meta Ads pasar domestik dan internasional dengan akumulasi omzet penjualan ~Rp300.000.000, serta mempertahankan chat respons Shopee 92% dan rating toko 4.8/5.0."
+      period: "Mar 2026 — Present",
+      role: "Founder & Head of Operations",
+      company: "Pusat Herbal Indonesia (E-Commerce Store)",
+      desc: "Founded and scaled an herbal health e-commerce store on Shopee to IDR 100,000,000 in revenue within the first 6 months, expanding to a 2nd branch (Pusat Herbal Asia). Executed domestic and cross-border Meta Ads driving ~IDR 300,000,000 in cumulative revenue, while maintaining a 92% chat response rate and 4.8/5.0 store rating."
     },
-    // 💼 6 PENGALAMAN KERJA
+    // 💼 PROFESSIONAL EXPERIENCE
     {
       period: "Jul 2026 — Sep 2026",
-      role: "Advertiser (Agency)",
+      role: "Digital Advertiser (Agency)",
       company: "CV. Hasbuna Artha Niaga",
-      desc: "Mengelola 7 brand klien dari berbagai industri (fashion, F&B, herbal, packaging). Mengeksekusi kampanye Marketplace Ads dan TikTok Ads (GMV Max) dari 0 hingga menghasilkan kestabilan performa ROAS 3.5x sesuai target proyeksi KPI brand."
+      desc: "Managed multi-channel advertising for 7 client brands across fashion, F&B, herbal, and packaging sectors. Scaled Marketplace Ads and TikTok Ads (GMV Max) campaigns from scratch, maintaining stable 3.5x ROAS in alignment with brand KPI projections."
     },
     {
-      period: "Des 2025 — Feb 2026",
-      role: "Advertiser (Freelance)",
+      period: "Dec 2025 — Feb 2026",
+      role: "Digital Advertiser (Freelance)",
       company: "Dewanta Trans Travel",
-      desc: "Merancang dan mengeksekusi strategi marketing kampanye digital melalui Meta Ads yang meningkatkan penjualan pelanggan baru sebesar 20%. Melakukan A/B testing materi kreatif harian (5–10 konten) dan pengujian CTA form vs WhatsApp yang meningkatkan conversion rate dari 65% menjadi 80%."
+      desc: "Designed and executed digital marketing campaigns via Meta Ads that increased new customer acquisition by 20%. Conducted daily A/B testing on 5–10 creative variations and optimized lead forms vs. WhatsApp CTAs, lifting conversion rate from 65% to 80%."
     },
     {
       period: "Jun 2025 — Mar 2026",
-      role: "Leader Customer Service",
+      role: "Customer Service Team Lead",
       company: "CV. Creaidea Innovation Yogyakarta",
-      desc: "Mengarahkan dan memimpin 5 orang staf Customer Service, merancang strategi SOP penjualan baru, serta mengontrol anggaran operasional divisi. Meningkatkan penjualan bulanan divisi secara konsisten sebesar 20%–25% (peningkatan omzet Rp200–Rp300 juta/bulan)."
+      desc: "Supervised and mentored a team of 5 Customer Service specialists, formulated new standard operating procedures (SOPs), and managed divisional budgets. Consistently grew divisional monthly revenue by 20%–25% (+IDR 200M–300M/month)."
     },
     {
       period: "Sep 2024 — Jun 2025",
-      role: "Advertiser",
+      role: "Digital Advertiser",
       company: "CV. Creaidea Innovation Yogyakarta",
-      desc: "Mengelola 20–35 kampanye aktif harian pada 3–5 akun Meta Ads dengan rata-rata alokasi budget bulanan Rp200 juta yang menghasilkan omzet terverifikasi Rp600–Rp800 juta/bulan. Mencapai performa ROAS hingga 50x pada kampanye tertentu melalui selective budget scaling."
+      desc: "Managed 20–35 daily active campaigns across 3–5 Meta Ads Manager accounts with a monthly ad budget of IDR 200M, delivering verified revenue of IDR 600M–800M/month. Achieved peak campaign ROAS of up to 50x through selective budget scaling."
     },
     {
-      period: "Sep 2023 — Agu 2024",
+      period: "Sep 2023 — Aug 2024",
       role: "Customer Service Specialist",
       company: "CV. Creaidea Innovation Yogyakarta",
-      desc: "Mengelola 80–120 customer inquiries per hari via WhatsApp dan telepon. Meraih penghargaan bergengsi 'Best Customer Service Performance 2024' dengan perolehan omzet tertinggi (Rp400–Rp600 juta) dan closing rate tertinggi divisi mencapai 87%."
+      desc: "Handled 80–120 customer inquiries daily via WhatsApp and phone. Awarded 'Best Customer Service Performance 2024' for generating top revenue (IDR 400M–600M) and achieving the department's highest closing rate of 87%."
     },
     {
-      period: "Feb 2024 — Agu 2024",
-      role: "Reporter (Magang)",
+      period: "Feb 2024 — Aug 2024",
+      role: "Journalist Intern",
       company: "Harian Republika DIY",
-      desc: "Meliput dan menulis berita sebanyak 10–15 pemberitaan investigasi lapangan dan berita aktual terbit resmi di media nasional Republika Jogja, Republika TV, dan RM.id sesuai kode etik jurnalistik dan standar redaksional."
+      desc: "Conducted investigative field reporting and published 10–15 articles in national news outlets including Republika Jogja, Republika TV, and RM.id, adhering to strict journalistic ethics and editorial standards."
     },
-    // 🎓 PENDIDIKAN
+    // 🎓 HIGHER EDUCATION
     {
-      period: "Sep 2021 — Des 2024",
-      role: "S1 Ilmu Komunikasi (S.I.Kom) — Wisudawan Terbaik",
+      period: "Sep 2021 — Dec 2024",
+      role: "Bachelor of Communication Science (S.I.Kom) — Top Graduate / Valedictorian",
       company: "Universitas Amikom Yogyakarta",
-      desc: "Lulus Predikat Cum Laude dengan IPK 3.81 / 4.00 dan dinobatkan sebagai Wisudawan Terbaik Periode 93 Universitas Amikom Yogyakarta dengan konsentrasi Media Komunikasi, Produksi Kreatif, dan Periklanan."
+      desc: "Graduated Cum Laude with a 3.81 / 4.00 GPA, awarded Top Graduate (Wisudawan Terbaik) Period 93 at Universitas Amikom Yogyakarta with a concentration in Media Communication, Creative Production, and Advertising."
     }
   ],
 
-  // 📜 2. VERIFIED CREDENTIALS (LICENSES & CERTIFICATIONS — HANYA 2 LISENSI RESMI)
+  // 📜 2. VERIFIED CREDENTIALS (LICENSES & CERTIFICATIONS — 2 OFFICIAL LICENSES)
   certifications: [
     {
-      title: "Sertifikat Profesi Digital Marketing (BNSP)",
-      issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
+      title: "Certified Digital Marketing Professional (BNSP)",
+      issuer: "National Board for Professional Certification (BNSP)",
       year: "2024 – 2027",
-      desc: "No. Reg: M 1962 01525 2024 / No. Sertifikat: 78422 2431 2 0201436 2024. Lisensi kompetensi profesi resmi tingkat nasional dalam strategi digital marketing, analisis data, optimasi ROAS, dan eksekusi kampanye online.",
+      desc: "Official national professional license in digital marketing strategy, performance analytics, ROAS optimization, and multi-channel campaign execution (Reg No: M 1962 01525 2024 / Cert No: 78422 2431 2 0201436 2024).",
       image: "assets/images/sertifikat_bnsp.jpg"
     },
     {
-      title: "Sertifikat Kompetensi Klaster Pemasaran Daring",
-      issuer: "LSP P1 LPK GeTI Incubator",
+      title: "Certified Online Marketing Competency",
+      issuer: "GeTI Incubator Professional Certification Body (LSP P1)",
       year: "2024 – 2026",
-      desc: "Pelatihan dan sertifikasi kompetensi intensif dalam menjalankan aktivitas pemasaran daring, pengelolaan produk digital, strategi penjualan online, hingga optimalisasi platform e-commerce.",
+      desc: "Comprehensive certification in online marketing operations, digital brand management, e-commerce platform sales strategy, and conversion optimization.",
       image: "assets/images/sertifikat_geti.jpg"
     }
   ],
 
-  // 📁 3. WORK SHOWCASE (ALL PORTFOLIO & CATEGORY LAYERS)
+  // 📁 3. WORK SHOWCASE (ALL PORTFOLIO & CATEGORY MAPPINGS)
   categories: [
-    { id: "all", label: "✨ All Portfolio" },
-    { id: "ads", label: "🚀 Advertiser" },
-    { id: "leader", label: "👑 Leader CS" },
-    { id: "cs", label: "💬 Customer Service" },
-    { id: "design", label: "🎨 Desain Grafis" }
+    { id: "all", label: "✨ All Works" },
+    { id: "ads", label: "🚀 Paid Advertising" },
+    { id: "leader", label: "👑 Customer Operations & Leadership" },
+    { id: "cs", label: "💬 Customer Service Specialist" },
+    { id: "design", label: "🎨 Commercial Graphic Design" }
   ],
   projects: [
     // =========================================================================
-    // 👑 LAYER LEADER CS (TERMASUK OMSET 700-800 JUTA & SUPERVISI TIM)
+    // 👑 CUSTOMER OPERATIONS & TEAM LEADERSHIP
     // =========================================================================
     {
       id: "leader-1",
       category: "leader",
       featured: true,
-      title: "Laporan Performa Harian Omzet ROAS Tim CS — OMSET 700-800 JUTA",
-      subtitle: "CV. Creaidea Innovation • Rekapitulasi Finansial & ROAS Tim CS",
-      metrics: "Omzet Rp 746 Juta • 3.612 Closing • ROAS 2.8x",
-      description: "Spreadsheet rekapitulasi performa harian operasional tim CS yang dipimpin Nessa: Total alokasi budget iklan Rp267 Juta menghasilkan 6.190 inbound lead, 3.612 closing transaksi sukses, total omzet terverifikasi Rp746 Juta (range 700-800 Juta), dan efisiensi ROAS divisi 2.8x.",
+      title: "Daily Revenue & ROAS Performance Ledger — IDR 700M–800M Scale",
+      subtitle: "CV. Creaidea Innovation • Financial Reconciliation & Team ROAS",
+      metrics: "IDR 746M Revenue • 3,612 Closings • 2.8x ROAS",
+      description: "Daily operational performance spreadsheet for the CS team led by Nessa: IDR 267M total ad spend generated 6,190 inbound leads, 3,612 successful transactions, verified total revenue of IDR 746M (IDR 700M–800M bracket), and 2.8x divisional ROAS.",
       image: "assets/images/omset_700_800_juta.jpeg",
-      tags: ["Leader CS", "Omzet 700-800 Juta", "6.190 Leads", "3.612 Closing", "ROAS 2.8x"]
+      tags: ["Customer Operations", "IDR 700M-800M Revenue", "6,190 Leads", "3,612 Closings", "2.8x ROAS"]
     },
     {
       id: "leader-2",
       category: "leader",
       featured: true,
-      title: "Dashboard Monitoring Lead Closing & Evaluasi Harian CS",
-      subtitle: "CV. Creaidea Innovation • Lead Tracking & Objection Matrix",
-      metrics: "Supervisi 5 Staf CS • Closing 87% Peak",
-      description: "Sistem pelaporan performa harian tim CS: evaluasi individual per staf CS (Dinda, Feby, Lova, Billa), analisa jam prime time lead masuk, breakdown kendala lead per produk, dan pemetaan objection handling harga & pengiriman.",
+      title: "Daily Lead Conversion Tracking & CS Evaluation Dashboard",
+      subtitle: "CV. Creaidea Innovation • Lead Pipeline & Objection Matrix",
+      metrics: "Supervision of 5 Staff • 87% Peak Closing",
+      description: "Daily team performance reporting system: individual staff evaluations (Dinda, Feby, Lova, Billa), peak-hour inbound traffic analysis, product-level friction breakdown, and price/shipping objection handling mapping.",
       image: "assets/images/cs_dashboard_1.jpeg",
       tags: ["Team Leadership", "Lead Analysis", "Objection Handling", "Closing Matrix"]
     },
     {
       id: "leader-3",
       category: "leader",
-      title: "Papan Whiteboard Time Table & Pembagian Shift Operasional Tim",
-      subtitle: "CV. Creaidea Innovation • SOP & Shift Management",
-      metrics: "0 Delay Reporting • Zero Missed Chat",
-      description: "Pengaturan jadwal shift kerja tim CS, alokasi penanganan live chat, target omzet harian divisi, serta sinkronisasi alur redirect kontak lead masuk berbasis whiteboard fisik di ruang operasional.",
+      title: "Operational Timetable & Shift Management Whiteboard",
+      subtitle: "CV. Creaidea Innovation • SOP & Shift Scheduling",
+      metrics: "0 Delayed Reports • Zero Missed Inquiries",
+      description: "Work shift scheduling, live chat allocation, daily team revenue targets, and physical whiteboard synchronization for inbound lead routing across operational shifts.",
       image: "assets/images/cs_timetable.jpeg",
-      tags: ["Operational Management", "Shift Timetable", "SOP Discipline"]
+      tags: ["Operational Management", "Shift Scheduling", "SOP Discipline"]
     },
     {
       id: "leader-4",
       category: "leader",
-      title: "Briefing Strategi Penjualan & Target Harian Tim CS (Whiteboard)",
-      subtitle: "CV. Creaidea Innovation • Daily Motivational & Target Alignment",
-      metrics: "Target Harian Tercapai • Tim 5 Staf",
-      description: "Dokumentasi briefing harian di whiteboard kantor: evaluasi target penjualan harian, penentuan strategi closing produk prioritas, dan evaluasi respon pelanggan.",
+      title: "Sales Strategy Briefing & Daily Target Alignment",
+      subtitle: "CV. Creaidea Innovation • Daily Target & Motivational Briefing",
+      metrics: "Daily KPI Achieved • 5-Member Team",
+      description: "Office whiteboard daily coordination: daily sales target reviews, prioritized product conversion strategies, and customer sentiment evaluation.",
       image: "assets/images/Dokumentasi_Koordinasi_Tim_Whiteboard_1.jpeg",
       tags: ["Team Briefing", "Sales Strategy", "Leadership"]
     },
     {
       id: "leader-5",
       category: "leader",
-      title: "Catatan Performa Mingguan & Pembagian Lead Tim CS (Whiteboard)",
+      title: "Weekly Performance Review & Lead Distribution System",
       subtitle: "CV. Creaidea Innovation • Weekly Review & Follow-Up System",
-      metrics: "+20% - 25% Revenue Growth",
-      description: "Dokumentasi rekapitulasi mingguan dan alur follow-up lead yang tertunda, memastikan setiap inquiry tertangani tuntas dengan konversi optimal.",
+      metrics: "+20% to 25% Revenue Growth",
+      description: "Weekly recap documentation and pending lead follow-up workflows, ensuring every inquiry is resolved with optimal conversion efficiency.",
       image: "assets/images/Dokumentasi_Koordinasi_Tim_Whiteboard_3.jpeg",
       tags: ["Weekly Review", "Lead Allocation", "Performance Tracking"]
     },
 
     // =========================================================================
-    // 💬 LAYER CUSTOMER SERVICE (TERMASUK BEST CS PERFORMANCE AWARD)
+    // 💬 CUSTOMER SERVICE SPECIALIST
     // =========================================================================
     {
       id: "cs-1",
@@ -196,64 +196,64 @@ window.PORTFOLIO_DATA = {
       featured: true,
       title: "Best Customer Service Performance Award 2024",
       subtitle: "CV. Creaidea Innovation • Corporate Performance Recognition",
-      metrics: "Omzet Rp 400M–600M • Closing Rate 87%",
-      description: "Penghargaan resmi atas pencapaian performa Customer Service terbaik tahun 2024 di CV. Creaidea Innovation: membukukan total omzet tertinggi (Rp400–Rp600 juta) dan rekor tingkat closing rate tertinggi mencapai 87% (target divisi 75%).",
+      metrics: "IDR 400M–600M Revenue • 87% Closing Rate",
+      description: "Official company recognition for top Customer Service performance in 2024: generated highest revenue (IDR 400M–600M) and recorded highest department closing rate of 87% against a 75% target.",
       image: "assets/images/cs_dashboard_1.jpeg",
-      tags: ["Best CS Award", "Closing Rate 87%", "Omzet Rp400M-600M", "High Performer"]
+      tags: ["Best CS Award", "87% Closing Rate", "IDR 400M-600M Revenue", "Top Performer"]
     },
     {
       id: "cs-2",
       category: "cs",
       featured: true,
-      title: "Bukti Chat Apresiasi Manajemen — Rekor Closing Rate Tinggi",
+      title: "Management Recognition — Record High Closing Rate",
       subtitle: "CV. Creaidea Innovation • Validated Customer Satisfaction",
-      metrics: "Closing Rate 87% • Apresiasi Manajemen",
-      description: "Tangkapan layar komunikasi apresiasi resmi manajemen internal perusahaan atas konsistensi pencapaian closing rate tertinggi dan pelayanan pelanggan yang responsif.",
+      metrics: "87% Closing Rate • Management Commendation",
+      description: "Documented management praise acknowledging consistent record-high closing performance and highly responsive customer communication.",
       image: "assets/images/Bukti_Chat_Apresiasi_Closing_Rate_Tinggi.jpeg",
-      tags: ["Chat Proof", "Management Appreciation", "High Closing Rate"]
+      tags: ["Management Commendation", "Closing Rate Proof", "Customer Experience"]
     },
     {
       id: "cs-3",
       category: "cs",
-      title: "Pencatatan Transparansi Redirect Closing Harian CS",
+      title: "Daily Sales Closing Reconciliation & Redirect Log",
       subtitle: "CV. Creaidea Innovation • Financial Reconciliation",
       metrics: "100% Data Accuracy • Zero Leakage",
-      description: "Bukti ketelitian administrasi dan transparansi pencatatan transaksi closing harian pada grup koordinasi operasional perusahaan.",
+      description: "Administrative ledger ensuring accuracy and transparency in tracking daily closed deals across operational coordination channels.",
       image: "assets/images/Bukti_Chat_Pencatatan_Redirect_Closing_CS.jpeg",
-      tags: ["Redirect Closing", "Data Accuracy", "Financial Discipline"]
+      tags: ["Sales Reconciliation", "Data Accuracy", "Financial Discipline"]
     },
     {
       id: "cs-4",
       category: "cs",
-      title: "Jadwal Piket & Kedisiplinan Operasional Layanan CS",
-      subtitle: "CV. Creaidea Innovation • 24/7 Coverage Readiness",
-      metrics: "Respons Chat Cepat • Disiplin Operasional",
-      description: "Papan jadwal piket operasional customer service untuk menjaga responsivitas penanganan chat pelanggan tetap prima dan tanpa jeda.",
+      title: "Customer Service Shift Roster & Operational Discipline",
+      subtitle: "CV. Creaidea Innovation • Continuous Coverage Readiness",
+      metrics: "Rapid Chat Response • High Operational Uptime",
+      description: "Operational shift roster maintaining continuous readiness, rapid response times, and zero-gap customer service coverage.",
       image: "assets/images/Jadwal_Piket_Operasional_CS.jpeg",
-      tags: ["Operational Schedule", "Customer Experience", "Response Time"]
+      tags: ["Roster Management", "Customer Experience", "Response Time"]
     },
     {
       id: "cs-5",
       category: "cs",
-      title: "Validasi Database Pelanggan & Rekonsiliasi Logistik",
-      subtitle: "Chefpreneur Vania Wijaya • Data Accuracy & CRM",
+      title: "Customer Database Validation & Logistics Reconciliation",
+      subtitle: "Chefpreneur Vania Wijaya • CRM & Order Processing",
       metrics: "95% Data Accuracy • 30–50 Orders/Day",
-      description: "Mengelola penginputan dan verifikasi 30–50 data transaksi pelanggan per hari ke sistem logistik dan jasa kirim. Menjaga akurasi data hingga 95% guna menekan tingkat retur paket dan mempercepat perputaran pesanan.",
+      description: "Managed verification and entry of 30–50 daily customer orders into logistics platforms. Maintained 95% data accuracy to minimize returns and expedite fulfillment.",
       image: "assets/images/cs_dashboard_1.jpeg",
       tags: ["Data Validation", "CRM Entry", "Logistics", "Operational Accuracy"]
     },
 
     // =========================================================================
-    // 🚀 LAYER ADVERTISER (META, TIKTOK & MARKETPLACE ADS SCALING)
+    // 🚀 PERFORMANCE MARKETING & PAID ADVERTISING
     // =========================================================================
     {
       id: "ads-1",
       category: "ads",
       featured: true,
-      title: "Meta Ads Scaling — Herbal Health Products (Rp200M/Bln)",
-      subtitle: "CV Creaidea Innovation • Scale & Budget Allocation",
+      title: "Meta Ads Scaling — Herbal Healthcare Line (IDR 200M/Mo Spend)",
+      subtitle: "CV. Creaidea Innovation • Scale & Budget Allocation",
       metrics: "3.5x–10.0x ROAS • IDR 600M–800M/Mo",
-      description: "Mengelola 20–35 kampanye harian pada 3–5 akun Meta Ads Manager dengan rata-rata alokasi budget bulanan hingga Rp200 juta. Menerapkan segmentasi broad, lookalike 1–3%, dan selective budget scaling yang menghasilkan omzet stabil Rp600M–800M/bulan.",
+      description: "Managed 20–35 daily active campaigns across 3–5 Meta Ads Manager accounts with monthly ad budgets up to IDR 200M. Implemented broad targeting, 1–3% lookalikes, and selective budget scaling to drive steady IDR 600M–800M monthly revenue.",
       image: "assets/images/ads_meta_1.jpeg",
       tags: ["Meta Ads", "Selective Scaling", "ROAS", "Performance Marketing"]
     },
@@ -262,9 +262,9 @@ window.PORTFOLIO_DATA = {
       category: "ads",
       featured: true,
       title: "Multi-Brand Agency Advertising — 7 Client Brands",
-      subtitle: "CV. Hasbuna Artha Niaga • Agency Advertiser",
+      subtitle: "CV. Hasbuna Artha Niaga • Agency Account Manager",
       metrics: "7 Client Brands • TikTok GMV Max & Shopee",
-      description: "Mengelola 7 brand klien dari industri fashion, herbal, dan packaging dari 0. Merancang forecasting budget, eksekusi TikTok Ads (GMV Max) dan Marketplace Ads dengan pencapaian ROAS 3.5x sesuai target proyeksi brand.",
+      description: "Managed multi-channel ads for 7 brands across fashion, herbal, and packaging. Formulated budget forecasts and executed TikTok Ads (GMV Max) and Marketplace Ads, achieving a 3.5x target ROAS.",
       image: "assets/images/ads_tiktok_1.png",
       tags: ["Agency", "TikTok Ads", "GMV Max", "Marketplace Ads", "Client Management"]
     },
@@ -273,29 +273,29 @@ window.PORTFOLIO_DATA = {
       category: "ads",
       featured: true,
       title: "E-Commerce Founder & Cross-Border Meta Ads",
-      subtitle: "Pusat Herbal Indonesia • Domestic & Global Market",
-      metrics: "Rp100M 6-Mo Shopee • Rp300M+ Meta Ads",
-      description: "Mendirikan operasional toko Shopee dari 0 hingga membukukan omzet Rp100 juta dalam 6 bulan pertama. Menjalankan kampanye Meta Ads untuk pasar Indonesia dan pasar internasional dengan akumulasi omzet Rp300 juta+, serta ekspansi cabang ke-2 (Pusat Herbal Asia).",
+      subtitle: "Pusat Herbal Indonesia • Domestic & Global Growth",
+      metrics: "IDR 100M 6-Mo Shopee • IDR 300M+ Meta Ads",
+      description: "Founded and scaled a Shopee store to IDR 100M revenue in 6 months. Executed Meta Ads campaigns for domestic and international markets generating IDR 300M+ cumulative revenue and expanding to a second branch.",
       image: "assets/images/ads_shopee_1.png",
       tags: ["Shopee Ads", "International Ads", "E-Commerce", "Meta Ads", "Growth"]
     },
     {
       id: "ads-4",
       category: "ads",
-      title: "Meta Ads Scaling — Health Campaign Dashboard 2",
+      title: "Meta Ads Scaling — Healthcare Campaign Dashboard",
       subtitle: "CV. Creaidea Innovation • Selective Scaling Strategy",
-      metrics: "ROAS hingga 50x • Selective Scaling",
-      description: "Dashboard kampanye Meta Ads produk herbal kesehatan yang menghasilkan performa ROAS hingga 50x melalui optimasi targeting dan segmentasi audiens yang presisi.",
+      metrics: "Up to 50x ROAS • Selective Scaling",
+      description: "Meta Ads campaign dashboard for healthcare products achieving up to 50x ROAS through precision audience segmentation and disciplined budget scaling.",
       image: "assets/images/Meta_Ads_Klien_Herbal_Health_Dashboard_2.jpeg",
       tags: ["Meta Ads", "High ROAS", "Healthcare", "Audience Targeting"]
     },
     {
       id: "ads-5",
       category: "ads",
-      title: "Meta Ads Performance Report — Spend & ROAS Herbal",
+      title: "Meta Ads Performance Report — Spend & ROAS Ledger",
       subtitle: "CV. Creaidea Innovation • Daily Ad Spend & Return",
-      metrics: "Spend Rp200M/Bln • Selective Scaling",
-      description: "Laporan resmi rekapitulasi spend dan ROAS kampanye Meta Ads produk kesehatan herbal dengan pembuktian omzet harian stabil dan performa konversi tinggi.",
+      metrics: "IDR 200M/Mo Spend • High ROAS",
+      description: "Official ledger of daily spend and returns for healthcare Meta Ads campaigns, demonstrating consistent daily revenue and high conversion efficiency.",
       image: "assets/images/Meta_Ads_Klien_Herbal_Health_Laporan_Spend_ROAS.jpeg",
       tags: ["Ad Spend Report", "ROAS", "Analytics", "Scaling"]
     },
@@ -304,28 +304,28 @@ window.PORTFOLIO_DATA = {
       category: "ads",
       title: "Lead Generation & WhatsApp Funnel — Dewanta Trans Travel",
       subtitle: "Dewanta Trans Travel • A/B Creative Testing",
-      metrics: "80% Conversion Rate • +20% New Customer",
-      description: "Mengeksekusi kampanye Meta Ads untuk reservasi travel dan pariwisata. Menjalankan pengujian A/B materi kreatif harian (5–10 konten) serta perbandingan form vs tombol WhatsApp yang mendongkrak conversion rate dari 65% menjadi 80%.",
+      metrics: "80% Conversion Rate • +20% New Customers",
+      description: "Executed Meta Ads for travel reservations. Tested 5–10 daily creative variants and compared lead forms against direct WhatsApp CTAs, boosting conversion rate from 65% to 80%.",
       image: "assets/images/ads_dewanta.jpeg",
       tags: ["Lead Gen", "Meta Ads", "A/B Testing", "WhatsApp Funnel", "Tourism"]
     },
     {
       id: "ads-7",
       category: "ads",
-      title: "Meta Ads Scaling — Food & Beverage Client Campaign",
+      title: "Meta Ads Scaling — Food & Beverage Campaign",
       subtitle: "F&B Industry • Brand Scaling & Direct Sales",
-      metrics: "Akurat Targeting • ROAS Positive",
-      description: "Kampanye Meta Ads untuk klien industri makanan dan minuman (F&B) dengan strategi visual engagement tinggi dan retargeting pelanggan setia.",
+      metrics: "Targeted Reach • Positive ROAS",
+      description: "Meta Ads campaigns for F&B clients combining high-engagement visual assets with targeted customer retargeting.",
       image: "assets/images/Meta_Ads_Klien_FB_Dashboard.jpeg",
       tags: ["Meta Ads", "F&B", "Direct Response", "Retargeting"]
     },
     {
       id: "ads-8",
       category: "ads",
-      title: "Meta Ads Performance Report — F&B Industry Client",
+      title: "Meta Ads Analytics Report — F&B Industry Client",
       subtitle: "Analytics & Budget Allocation Report",
       metrics: "Conversion Tracking • Budget Optimization",
-      description: "Rekapitulasi data spend, reach, dan konversi harian kampanye periklanan klien F&B guna memastikan alokasi anggaran tepat sasaran.",
+      description: "Comprehensive daily spend, reach, and conversion analytics ensuring disciplined ad budget allocation.",
       image: "assets/images/Meta_Ads_Klien_FB_Laporan.png",
       tags: ["F&B Report", "Conversion Tracking", "Budget Allocation"]
     },
@@ -335,47 +335,47 @@ window.PORTFOLIO_DATA = {
       title: "TikTok Ads Campaign — Raraya Scarf Fashion Brand",
       subtitle: "CV. Hasbuna Artha Niaga • TikTok GMV Max",
       metrics: "Creative Video Testing • GMV Max",
-      description: "Eksekusi iklan berbayar TikTok Ads untuk brand fashion hijab Raraya Scarf menggunakan format video kreatif direct response dan optimasi GMV Max.",
+      description: "TikTok Ads execution for hijab fashion brand Raraya Scarf utilizing direct-response creative videos and GMV Max optimization.",
       image: "assets/images/TikTok_Ads_Fashion_Raraya_Scarf.png",
       tags: ["TikTok Ads", "Fashion", "GMV Max", "Video Creative"]
     },
     {
       id: "ads-10",
       category: "ads",
-      title: "TikTok Ads Campaign — Hap Hap Snack Series (Part 1)",
-      subtitle: "CV. Hasbuna Artha Niaga • Food Snack Scaling",
-      metrics: "High Click-Through & Engagement",
-      description: "Strategi TikTok Ads untuk produk camilan Hap Hap Snack yang mengoptimalkan konten kuliner interaktif dan click-through rate tinggi.",
+      title: "TikTok Ads Campaign — Hap Hap Snack Series (Phase 1)",
+      subtitle: "CV. Hasbuna Artha Niaga • Snack Brand Scaling",
+      metrics: "High CTR & Engagement",
+      description: "TikTok Ads campaign for Hap Hap Snack optimizing interactive culinary content and high click-through rates.",
       image: "assets/images/TikTok_Ads_FB_Hap_Hap_Snack_1.png",
       tags: ["TikTok Ads", "Snack F&B", "Viral Creative", "CTR Optimization"]
     },
     {
       id: "ads-11",
       category: "ads",
-      title: "TikTok Ads Campaign — Hap Hap Snack Series (Part 2)",
+      title: "TikTok Ads Campaign — Hap Hap Snack Series (Phase 2)",
       subtitle: "CV. Hasbuna Artha Niaga • Scalable Audience",
-      metrics: "Scalable Audience Targeting",
-      description: "Pengembangan kampanye TikTok Ads fase scaling untuk produk Hap Hap Snack dengan segmentasi minat generasi muda dan impulsive buying.",
+      metrics: "Audience Scaling & Impulsive Buying",
+      description: "Scaling phase of TikTok Ads for Hap Hap Snack targeting younger demographics with impulsive buying propensity.",
       image: "assets/images/TikTok_Ads_FB_Hap_Hap_Snack_2.png",
       tags: ["TikTok Ads", "F&B", "Scaling", "Audience Targeting"]
     },
     {
       id: "ads-12",
       category: "ads",
-      title: "Shopee Ads Dashboard — Toko Herbal Mandiri (Akun 1)",
+      title: "Shopee Ads Dashboard — Herbal E-Commerce (Store 1)",
       subtitle: "Pusat Herbal Indonesia • Search & Discovery Ads",
       metrics: "Keyword Bidding • ROAS Optimization",
-      description: "Pengelolaan kata kunci pencarian berbayar dan iklan produk serupa di Shopee yang menjaga rasio biaya iklan terhadap omzet tetap sangat menguntungkan.",
+      description: "Managed paid search keywords and similar product ads on Shopee, maintaining an optimal cost-to-revenue advertising ratio.",
       image: "assets/images/Shopee_Ads_Pusat_Herbal_Dashboard_Iklan_1.png",
       tags: ["Shopee Ads", "Keyword Bidding", "Discovery Ads", "E-Commerce"]
     },
     {
       id: "ads-13",
       category: "ads",
-      title: "Shopee Ads Dashboard — Toko Herbal Mandiri (Akun 2)",
+      title: "Shopee Ads Dashboard — Herbal E-Commerce (Store 2)",
       subtitle: "Pusat Herbal Indonesia • Secondary Store Scaling",
       metrics: "Discovery Ads Management",
-      description: "Pengelolaan iklan Shopee Ads pada toko cabang ke-2 guna memperluas penetrasi pasar produk herbal dengan penawaran bundle menarik.",
+      description: "Shopee Ads management for the secondary branch store, expanding market penetration through attractive bundle promotions.",
       image: "assets/images/Shopee_Ads_Pusat_Herbal_Dashboard_Iklan_2.png",
       tags: ["Shopee Ads", "Store 2", "Bundle Offers", "Marketplace"]
     },
@@ -385,17 +385,17 @@ window.PORTFOLIO_DATA = {
       title: "Shopee Ads Optimization — Packaging Print House",
       subtitle: "CV. Hasbuna Artha Niaga • B2B & Retail Clients",
       metrics: "B2B & Retail Order Scaling",
-      description: "Optimasi kampanye Shopee Ads untuk produsen kemasan packaging dan print house, membidik pemilik UMKM dan pengusaha makanan.",
+      description: "Shopee Ads optimization for packaging and printing manufacturers targeting SME business owners and food entrepreneurs.",
       image: "assets/images/Shopee_Ads_Klien_Packaging_Print_House_1.png",
-      tags: ["Shopee Ads", "Packaging", "B2B UMKM", "Print House"]
+      tags: ["Shopee Ads", "Packaging", "B2B SMEs", "Print House"]
     },
     {
       id: "ads-15",
       category: "ads",
-      title: "Shopee Ads Campaign — Buku Resep Vania Wijaya",
+      title: "Shopee Ads Campaign — Vania Wijaya Recipe Book",
       subtitle: "CV. Hasbuna Artha Niaga • Culinary Niche Books",
-      metrics: "Niche Audience Targeting • 30% Sales Lift",
-      description: "Pemasaran buku resep memasak Chefpreneur Vania Wijaya di marketplace Shopee dengan targeting komunitas hobi masak dan pembaca buku kuliner.",
+      metrics: "Niche Targeting • 30% Sales Lift",
+      description: "Marketplace advertising on Shopee for Chefpreneur Vania Wijaya's recipe book, targeting cooking communities and culinary enthusiasts.",
       image: "assets/images/Shopee_Ads_Klien_Buku_Resep_Vania_Wijaya.png",
       tags: ["Shopee Ads", "Culinary Book", "Niche Community", "Conversion"]
     },
@@ -405,7 +405,7 @@ window.PORTFOLIO_DATA = {
       title: "Shopee Ads Management — Fashion Brand Client",
       subtitle: "CV. Hasbuna Artha Niaga • Marketplace Algorithm",
       metrics: "Marketplace Algorithm Optimization",
-      description: "Penerapan strategi marketplace advertising untuk brand fashion klien agensi, mengoptimalkan flash sale dan broadcast chat.",
+      description: "Marketplace advertising for agency fashion clients, optimizing flash sales and broadcast chat funnels.",
       image: "assets/images/Shopee_Ads_Klien_Fashion.png",
       tags: ["Shopee Ads", "Fashion Client", "Marketplace Algorithm"]
     },
@@ -415,22 +415,22 @@ window.PORTFOLIO_DATA = {
       title: "Shopee Ads Campaign — F&B Client Scaling",
       subtitle: "CV. Hasbuna Artha Niaga • Daily Budget Control",
       metrics: "Daily Budget Control & ROAS",
-      description: "Manajemen kampanye iklan toko makanan dan minuman di Shopee dengan pengawasan ketat terhadap return on ad spend harian.",
+      description: "Advertising management for F&B store clients on Shopee with strict monitoring of daily return on ad spend.",
       image: "assets/images/Shopee_Ads_Klien_FB_1.png",
       tags: ["Shopee Ads", "F&B Client", "Daily ROAS", "Agency"]
     },
 
     // =========================================================================
-    // 🎨 LAYER DESAIN GRAFIS (COMMERCIAL GRAPHIC DESIGN)
+    // 🎨 COMMERCIAL GRAPHIC DESIGN & CREATIVE ASSETS
     // =========================================================================
     {
       id: "design-1",
       category: "design",
       featured: true,
-      title: "Produksi Materi Iklan Harian (Ads Visual & Video Hook)",
+      title: "Daily Ad Creative Production (Visuals & Video Hooks)",
       subtitle: "High-Converting Direct Response Creative Assets",
       metrics: "8–16 Creatives/Day • Image & Short Video",
-      description: "Memproduksi 8–16 materi visual dan video pendek setiap hari menggunakan Adobe Photoshop, Canva, dan CapCut untuk kebutuhan A/B testing kampanye iklan digital berbayar (Meta & TikTok Ads). Mengutamakan visual hook kuat dan readability optimal.",
+      description: "Produced 8–16 visual creatives and short-form videos daily using Adobe Photoshop, Canva, and CapCut for digital paid advertising campaigns (Meta & TikTok Ads). Focused on strong visual hooks and clear typography.",
       image: "assets/images/design_poster_1.jpg",
       tags: ["Ads Creative", "Photoshop", "Direct Response", "CapCut", "A/B Testing"]
     },
@@ -441,7 +441,7 @@ window.PORTFOLIO_DATA = {
       title: "Premier League Matchday Sports Commercial Poster",
       subtitle: "Athletic Editorial Graphic Design & Typography",
       metrics: "High-Resolution • Print & Social Media Ready",
-      description: "Desain poster komersial sepak bola yang mengeksplorasi hierarki tipografi tegas, efek pencahayaan atletik dramatis, dan komposisi visual bertenaga tinggi untuk materi promosi laga kompetisi olahraga.",
+      description: "Football commercial poster design exploring bold typographic hierarchy, dramatic athletic lighting, and dynamic visual composition for competition promotions.",
       image: "assets/images/design_poster_1.jpg",
       tags: ["Graphic Design", "Photoshop", "Sports Poster", "Typography"]
     },
@@ -451,7 +451,7 @@ window.PORTFOLIO_DATA = {
       title: "Championship Celebration Poster — Triple Winner Larana Stadium",
       subtitle: "Multi-Competition Trophy Celebration Artwork",
       metrics: "Trophy Graphic Design • Creative Artwork",
-      description: "Karya seni visual perayaan gelar juara turnamen dengan perpaduan tata cahaya stadion megah, grading warna emas eksklusif, dan penataan elemen grafis monumental yang memancarkan aura kemenangan.",
+      description: "Tournament championship artwork combining grand stadium illumination, exclusive gold color grading, and monumental visual elements capturing the spirit of victory.",
       image: "assets/images/Desain_Poster_Champion_Triple_Winner_Larana_Stadium.jpg",
       tags: ["Visual Art", "Gold Grading", "Event Branding", "Photoshop"]
     },
@@ -461,7 +461,7 @@ window.PORTFOLIO_DATA = {
       title: "Champions Borcelle Football Club Poster Identity",
       subtitle: "Minimalist Club Honor & Identity Artwork",
       metrics: "Vector & Photo Manipulation • Social Media",
-      description: "Komposisi visual modern menggabungkan elemen vektor minimalis dan manipulasi foto atlet untuk perayaan kemenangan klub sepak bola Borcelle dalam format media sosial resmi.",
+      description: "Modern visual composition blending minimalist vector art and athlete photo manipulation celebrating Borcelle FC's victory for official social channels.",
       image: "assets/images/design_poster_2.jpg",
       tags: ["Vector Layout", "Sports Branding", "Poster", "Creative"]
     },
@@ -471,7 +471,7 @@ window.PORTFOLIO_DATA = {
       title: "Premier Kickoff Matchday Sports Poster",
       subtitle: "High-Contrast Match Art & Athletic Composition",
       metrics: "Sports Editorial • Composition",
-      description: "Perancangan poster kickoff pertandingan sepak bola bertaraf profesional dengan kontras warna tajam dan penonjolan figur bintang lapangan.",
+      description: "Professional kickoff match poster featuring high-contrast color grading and spotlighting key athletic figures.",
       image: "assets/images/design_poster_3.jpg",
       tags: ["Sports Poster", "Kickoff Art", "Athletic", "Photoshop"]
     },
@@ -481,7 +481,7 @@ window.PORTFOLIO_DATA = {
       title: "Final Match Showdown Poster — Larana Stadium",
       subtitle: "Match Preview • Color Grading & Atmosphere",
       metrics: "Match Preview • Color Grading",
-      description: "Poster promosi laga puncak partai final stadion dengan nuansa dramatis, tata pencahayaan atmosferik, dan tipografi komersial modern.",
+      description: "Dramatic championship final poster featuring atmospheric lighting and modern commercial typography.",
       image: "assets/images/Desain_Poster_Final_Match_Larana_Stadium.jpg",
       tags: ["Final Match", "Atmospheric Art", "Stadium Visual", "Color Grading"]
     },
@@ -491,7 +491,7 @@ window.PORTFOLIO_DATA = {
       title: "Football Club Red Team Visual Branding Poster",
       subtitle: "Club Atmosphere & Dynamic Sports Layout",
       metrics: "Brand Atmosphere • Dynamic Layout",
-      description: "Eksplorasi visual identitas warna merah klub sepak bola dengan tata letak dinamis untuk materi promosi digital dan cetak.",
+      description: "Visual exploration of club red identity with dynamic layouts for digital promotional feeds and large-format print.",
       image: "assets/images/Desain_Poster_Football_Club_RedTeam.jpg",
       tags: ["Red Team Branding", "Dynamic Layout", "Sports Club", "Identity"]
     },
@@ -501,7 +501,7 @@ window.PORTFOLIO_DATA = {
       title: "Goal Announcement & Player Milestone Poster",
       subtitle: "Live Match Feed Graphic & Social Update",
       metrics: "Social Media Match Update",
-      description: "Format grafis feed media sosial instan untuk pengumuman gol dan rekor milestone pemain selama jalannya pertandingan.",
+      description: "Instant matchday feed graphic template for live goal announcements and milestone celebrations during matches.",
       image: "assets/images/Desain_Poster_Goal_Announcement.jpg",
       tags: ["Goal Announcement", "Player Milestone", "Social Media Feed"]
     },
@@ -511,7 +511,7 @@ window.PORTFOLIO_DATA = {
       title: "Player Contract Extension — Official Announcement Art",
       subtitle: "Sports Social Graphics • Official Club Press",
       metrics: "Official Announcement • Adobe Photoshop",
-      description: "Desain pengumuman resmi perpanjangan kontrak pemain bintang klub dengan sentuhan visual prestisius dan kredibel.",
+      description: "Official visual announcement for a star player's contract extension designed with an authentic, prestigious club aesthetic.",
       image: "assets/images/Desain_Poster_Player_Contract_Extension.jpg",
       tags: ["Contract Extension", "Official Press", "Sports Graphics"]
     },
@@ -521,7 +521,7 @@ window.PORTFOLIO_DATA = {
       title: "Triple Winner Celebration Poster — Spanyol Stadium",
       subtitle: "Victory Celebration Visual & Trophy Display",
       metrics: "Celebration Visual • Poster Art",
-      description: "Poster perayaan raihan tiga trofi bergengsi sekaligus dengan komposisi panggung juara yang megah dan berkelas.",
+      description: "Artwork celebrating a historic three-trophy sweep with a grand championship stage composition.",
       image: "assets/images/Desain_Poster_Champion_Triple_Winner_Spanyol_Stadium.jpg",
       tags: ["Triple Winner", "Trophy Celebration", "Victory Artwork"]
     },
@@ -531,7 +531,7 @@ window.PORTFOLIO_DATA = {
       title: "Football Academy Open Registration Promotional Series",
       subtitle: "Marketing Poster Series • Canva & Photoshop",
       metrics: "Marketing Poster • Canva & Photoshop",
-      description: "Rangkaian materi poster promosi pendaftaran akademi sepak bola usia muda dengan alur informasi registrasi yang jelas dan persuasif.",
+      description: "Promotional poster series for youth football academy enrollment designed with clear, persuasive information flow.",
       image: "assets/images/Desain_Poster_Open_Registration_Football_Academy_1.jpg",
       tags: ["Academy Registration", "Youth Football", "Marketing Series"]
     },
@@ -541,20 +541,20 @@ window.PORTFOLIO_DATA = {
       title: "Season Title Matchday & Half Time Match Updates",
       subtitle: "Matchday Digital Feed Visual Series",
       metrics: "Live Match Feed Graphic",
-      description: "Rangkaian aset visual live update jeda babak pertama dan penentuan gelar juara musim kompetisi untuk engagement audiens.",
+      description: "Visual asset series for live halftime scores and title-deciding fixture updates to boost audience engagement.",
       image: "assets/images/Desain_Poster_Season_Title_Matchday.jpg",
       tags: ["Matchday Update", "Half Time Feed", "Digital Assets"]
     }
   ],
 
-  // 📰 EDITORIAL, PUBLISHED MEDIA & ACADEMIC WORKS (SEKSI KHUSUS SOCIAL PROOF)
+  // 📰 EDITORIAL, PUBLISHED MEDIA & ACADEMIC WORKS
   editorialProjects: [
     {
       id: "ed-1",
       title: "Published Field Journalism — Harian Republika & RM.id",
       subtitle: "10 Verified Investigative Articles & Regional Reports",
       metrics: "10 Published Reports • Republika Jogja & TV",
-      description: "Melakukan investigasi lapangan, riset narasumber berimbang, dan mempublikasikan 10 liputan berita resmi di media nasional Republika Jogja, Republika TV, dan RM.id mencakup isu relokasi pedagang Malioboro, kebijakan pendidikan tinggi, dan aksi solidaritas kemanusiaan.",
+      description: "Conducted field investigations, sourced balanced interviews, and published 10 official news reports across national outlets including Republika Jogja, Republika TV, and RM.id covering Malioboro vendor relocations, higher education policies, and humanitarian solidarity initiatives.",
       image: "",
       icon: "fa-solid fa-newspaper",
       tags: ["Investigative Journalism", "Field Reporting", "Published Media", "Fact-Checking"],
@@ -626,7 +626,7 @@ window.PORTFOLIO_DATA = {
       title: "Commercial Film & Video Production",
       subtitle: "Assistant Directing & Commercial Producing",
       metrics: "Commercial Ads & Music Video • YouTube Works",
-      description: "Mengelola logistik produksi, storytelling visual, penyutradaraan bakat, dan pascaproduksi untuk video musik resmi LANGIT SORE ('Cinta Hanya Cerita Luka'), film pendek 'HOPE', iklan komersial Dokter Susu Sapi, dan Iklan Layanan Masyarakat GEGABAH.",
+      description: "Managed production logistics, visual storytelling, talent direction, and post-production for the official music video of LANGIT SORE ('Cinta Hanya Cerita Luka'), short film 'HOPE', commercial advertisement for Dokter Susu, and Public Service Announcement GEGABAH.",
       image: "",
       icon: "fa-solid fa-film",
       tags: ["Video Production", "Assistant Director", "Producer", "YouTube Works"],
@@ -653,13 +653,13 @@ window.PORTFOLIO_DATA = {
     },
     {
       id: "ed-3",
-      title: "Academic Recognition — Best Graduate Award (Cum Laude)",
+      title: "Academic Recognition — Top Graduate Award (Cum Laude)",
       subtitle: "Department of Communication Science, Universitas Amikom Yogyakarta",
       metrics: "GPA 3.81 • Best Graduate Honor Period 93",
-      description: "Dianugerahi predikat Wisudawan Terbaik Program Studi Ilmu Komunikasi Universitas Amikom Yogyakarta dengan IPK 3.81 (Cum Laude). Menunjukkan penguasaan mendalam dalam riset komunikasi terapan, analisis pesan persuasif, dan etika profesi.",
+      description: "Awarded Top Graduate (Wisudawan Terbaik) of the Communication Science Department at Universitas Amikom Yogyakarta with a 3.81 GPA (Cum Laude). Demonstrating rigorous foundation in applied communication research, persuasive messaging, and media ethics.",
       image: "",
       icon: "fa-solid fa-graduation-cap",
-      tags: ["Academic Honor", "Best Graduate", "Communication Science", "Amikom"],
+      tags: ["Academic Honor", "Top Graduate", "Communication Science", "Amikom"],
       links: [
         {
           title: "Prestasi Gemilang: Inilah Wisudawan Terbaik Wisuda Periode 93 Universitas Amikom Yogyakarta",

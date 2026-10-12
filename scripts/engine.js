@@ -347,7 +347,7 @@ function renderPortfolio(categories, projects) {
         <span class="section-tag">Work Showcase</span>
         <h2 class="section-title">Core Specializations</h2>
         <p class="section-subtitle">
-          Portofolio profesional terintegrasi: Akuisisi traffic iklan berbayar multi-channel (Meta, Shopee, TikTok), operasional layanan pelanggan & supervisi tim CS (Omzet 700–800 Juta & rekor closing 87%), serta perancangan materi visual grafis komersial.
+          Integrated commercial portfolio: Multi-channel paid ad acquisition (Meta, Shopee, TikTok), customer operations & CS team leadership (IDR 700M–800M revenue & 87% peak closing rate), and commercial graphic design.
         </p>
       </div>
 
@@ -377,7 +377,7 @@ function renderPortfolio(categories, projects) {
           </div>
           <h3 class="layer-title">Paid Advertising & Multi-Channel Ads Scaling</h3>
           <p class="layer-subtitle">
-            Pilar utama pertumbuhan bisnis: Perencanaan forecasting budget, eksekusi kampanye berbayar dari 0 hingga skala besar, serta alokasi anggaran bulanan hingga Rp200 juta yang menghasilkan omzet stabil Rp600M–800M/bulan dengan kestabilan ROAS 3.5x–50x.
+            Core pillar of business growth: Strategic budget forecasting, end-to-end campaign execution from ground up to scale, and monthly ad budget allocation up to IDR 200M delivering consistent IDR 600M–800M/month revenue with 3.5x–50x ROAS stability.
           </p>
         </div>
 
@@ -428,7 +428,7 @@ function renderPortfolio(categories, projects) {
           </div>
           <h3 class="layer-title">Customer Operations, Team Leadership & High-Conversion Closing</h3>
           <p class="layer-subtitle">
-            Kepemimpinan operasional divisi, supervisi 5 staf CS, mitigasi objection handling, alur kedisiplinan shift whiteboard, serta pencapaian rekor closing rate 87% dan omzet ratusan juta rupiah.
+            Departmental operational leadership, supervision of 5 CS staff, objection handling frameworks, whiteboard shift discipline, record 87% closing rate, and hundreds of millions in delivered revenue.
           </p>
         </div>
 
@@ -436,7 +436,7 @@ function renderPortfolio(categories, projects) {
         <div class="layer-channel-box">
           <div class="layer-channel-heading">
             <i class="fa-solid fa-people-roof"></i>
-            <span>Leader Customer Service & Supervisi Tim 5 Staf</span>
+            <span>Customer Service Leadership & 5-Staff Supervision</span>
             <span class="layer-channel-badge">${leaderCS.length} Deliverables</span>
           </div>
           <div class="portfolio-grid">
@@ -467,7 +467,7 @@ function renderPortfolio(categories, projects) {
           </div>
           <h3 class="layer-title">Commercial Graphic Design & Production Creatives</h3>
           <p class="layer-subtitle">
-            Produksi 8–16 materi visual iklan harian (direct-response), poster komersial kompetisi olahraga resolusi tinggi, branding visual turnamen, dan perayaan gelar juara klub.
+            High-volume production of 8–16 daily direct-response ad visuals, high-resolution sports competition posters, tournament visual branding, and club championship celebrations.
           </p>
         </div>
 
@@ -491,7 +491,7 @@ function renderPortfolio(categories, projects) {
           </div>
           <h3 class="editorial-showcase-title">Published Field Journalism & Production Works</h3>
           <p class="editorial-showcase-subtitle">
-            Bukti kecakapan komunikasi formal: 10 liputan investigasi lapangan terbit resmi di Harian Republika & RM.id, produksi video komersial siar YouTube, serta kehormatan akademik Wisudawan Terbaik Amikom (IPK 3.81).
+            Formal communication credentials: 10 investigative field reports officially published in national media (Harian Republika & RM.id), broadcast commercial video productions, and academic distinction as Universitas Amikom Best Graduate (GPA 3.81).
           </p>
         </div>
 

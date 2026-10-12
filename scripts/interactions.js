@@ -36,19 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const categoryNameMap = {
-  all: 'All Portfolio',
-  ads: 'Advertiser',
-  leader: 'Leader Customer Service',
+  all: 'All Works',
+  ads: 'Paid Advertising',
+  leader: 'Customer Operations & Leadership',
   cs: 'Customer Service Specialist',
-  design: 'Desain Grafis'
+  design: 'Commercial Graphic Design'
 };
 
 const pillarSummaryMap = {
-  all: 'Menampilkan seluruh kumpulan portofolio lengkap Nessa Kamalika: Akuisisi traffic iklan berbayar (Meta, TikTok, Shopee), kepemimpinan tim & rekapitulasi omzet 700-800 juta Leader CS, pencapaian closing rate 87% Customer Service, serta karya desain grafis komersial.',
-  ads: 'Menampilkan portofolio advertiser & ads scaling: Meta Ads skala besar (Rp200M spend/bln), Shopee Ads toko herbal & klien, Agency 7 Brand TikTok GMV Max, Dewanta Trans Travel, dan optimasi ROAS selective scaling.',
-  leader: 'Menampilkan bukti kepemimpinan tim CS: Rekapitulasi Laporan Harian Omzet Rp746 Juta (700-800M) dengan 3.612 closing, Dashboard evaluasi 5 staf CS, Whiteboard SOP time table, dan briefing strategi harian.',
-  cs: 'Menampilkan bukti performa Customer Service: Best Customer Service Performance Award 2024 (omzet Rp400M-600M, closing rate 87%), bukti chat apresiasi manajemen, transparansi redirect closing, dan kedisiplinan operasional.',
-  design: 'Menampilkan portofolio desain grafis komersial: Desain poster Premier League Matchday, branding Champions Borcelle FC, perayaan triple winner, promosi akademi sepakbola, dan materi kreatif iklan harian.'
+  all: 'Displaying complete portfolio deliverables: Multi-channel paid ads acquisition (Meta, TikTok, Shopee), customer operations leadership & IDR 746M revenue recap, 87% peak sales closing rate, and commercial graphic design.',
+  ads: 'Displaying performance marketing & ad scaling portfolio: Meta Ads large-scale budget allocation (IDR 200M/month), multi-store Shopee Ads, Agency 7-Brand TikTok GMV Max, Dewanta Trans Travel, and ROAS selective scaling.',
+  leader: 'Displaying customer operations & leadership deliverables: IDR 746M revenue verification with 3,612 successful orders, 5-staff CS monitoring dashboard, whiteboard shift timetable, and daily strategy briefings.',
+  cs: 'Displaying customer service specialist achievements: Best CS Performance Award 2024 (closing rate 87%, revenue IDR 400M–600M), management chat proof, redirect closing accuracy, and operational readiness.',
+  design: 'Displaying commercial graphic design portfolio: Premier League matchday posters, Borcelle FC branding, championship celebration artworks, football academy promotions, and daily direct-response ad creatives.'
 };
 
 function renderFilteredProjects(category) {
@@ -117,7 +117,7 @@ function renderFilteredProjects(category) {
     actionsSlot.innerHTML = `
       <div class="portfolio-counter">
         <i class="fa-solid fa-circle-check" style="color: var(--accent); margin-right: 6px;"></i>
-        ${pillarSummaryMap[category] || `Menampilkan ${filtered.length} deliverable pada pilar ini.`}
+        ${pillarSummaryMap[category] || `Displaying ${filtered.length} deliverables in this specialization.`}
       </div>
     `;
   }
@@ -153,9 +153,9 @@ function renderEditorialShowcase() {
           ${hasLinks ? `
             <div class="project-card-footer">
               <span class="project-links-badge">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> ${e.links.length} Berkas Publikasi & Video
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> ${e.links.length} Publications & Video Works
               </span>
-              <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent);">Buka Arsip ↗</span>
+              <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent);">Explore ↗</span>
             </div>
           ` : ''}
         </div>
