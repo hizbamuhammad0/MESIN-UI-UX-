@@ -95,6 +95,12 @@ window.PORTFOLIO_DATA = {
       company: "Harian Republika DIY",
       desc: "Conducted investigative field reporting and published 10–15 articles in national news outlets including Republika Jogja, Republika TV, and RM.id, adhering to strict journalistic ethics and editorial standards."
     },
+    {
+      period: "Jul 2023 — Jan 2024",
+      role: "Teaching Assistant (Photography Practicum)",
+      company: "Universitas Amikom Yogyakarta",
+      desc: "Mentored a cohort of 60 undergraduate students in fundamental and applied studio photography techniques, camera operations, visual lighting composition, and academic grading administration."
+    },
     // 🎓 HIGHER EDUCATION
     {
       period: "Sep 2021 — Dec 2024",
