@@ -116,6 +116,7 @@ function renderHero(data) {
   const socialIconsMap = {
     WhatsApp: 'fa-brands fa-whatsapp',
     Email: 'fa-solid fa-envelope',
+    Instagram: 'fa-brands fa-instagram',
     LinkedIn: 'fa-brands fa-linkedin-in'
   };
 
@@ -180,7 +181,7 @@ function renderTicker() {
 
   const items = [
     'GROWTH & PERFORMANCE MARKETING',
-    'META & TIKTOK ADS SCALING',
+    'META, TIKTOK & MARKETPLACE ADS SCALING',
     '87% PEAK SALES CLOSING RATE',
     'IDR 600M–800M/MO DELIVERED',
     'BNSP LICENSED DIGITAL MARKETER',
@@ -300,7 +301,7 @@ function renderPortfolio(categories, projects) {
       <div class="section-header">
         <span class="section-tag">Work Showcase</span>
         <h2 class="section-title">Projects & Portfolio</h2>
-        <p class="section-subtitle">Tiga pilar keahlian komersial: Akuisisi traffic berbayar multi-channel, kepemimpinan operasional closing tim CS, dan perancangan materi visual komersial.</p>
+        <p class="section-subtitle">Keahlian komersial terpadu: Periklanan berbayar multi-channel (Meta, TikTok, Shopee), kepemimpinan operasional tim CS & omzet 700-800 juta, penanganan closing rate 87%, serta perancangan materi visual komersial.</p>
       </div>
 
       <div class="filter-tabs" id="portfolio-tabs">

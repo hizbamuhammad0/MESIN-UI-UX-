@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const data = window.PORTFOLIO_DATA;
   if (!data || !data.projects) return;
 
-  // Render initial projects: Default to Pillar 1 ('ads' — Paid Traffic & Ads Growth)
-  renderFilteredProjects('ads');
+  // Render initial projects: Default to 'all' (All Portfolio)
+  renderFilteredProjects('all');
 
   // Render Editorial & Published Media Showcase (Opsi A)
   renderEditorialShowcase();
@@ -34,15 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const categoryNameMap = {
-  ads: 'Paid Traffic & Ads Growth',
-  cs: 'Customer Operations & CRM',
-  design: 'Commercial Design & Creative'
+  all: 'All Portfolio',
+  ads: 'Advertiser',
+  leader: 'Leader Customer Service',
+  cs: 'Customer Service Specialist',
+  design: 'Desain Grafis'
 };
 
 const pillarSummaryMap = {
-  ads: 'Menampilkan 5 portofolio akuisisi traffic berbayar: Meta Ads skala besar (Rp200M spend/bln), Agency 7 Brand Klien TikTok GMV Max, Founder E-Commerce Cross-Border, Selective Scaling, dan Funnel Reservasi WhatsApp.',
-  cs: 'Menampilkan 4 sistem operasional layanan pelanggan: Supervisi Tim 5 Staf CS (Closing 87%), Marketplace Chat SLA 92%, Shift Timetable Whiteboard, dan Validasi Database Pelanggan Akurasi 95%.',
-  design: 'Menampilkan 4 deliverable desain grafis komersial: Produksi 8–16 materi kreatif ads harian (image & video), Poster Premier League Matchday, Karya Seni Perayaan Juara, dan Borcelle FC Identity.'
+  all: 'Menampilkan seluruh kumpulan portofolio lengkap Nessa Kamalika: Akuisisi traffic iklan berbayar (Meta, TikTok, Shopee), kepemimpinan tim & rekapitulasi omzet 700-800 juta Leader CS, pencapaian closing rate 87% Customer Service, serta karya desain grafis komersial.',
+  ads: 'Menampilkan portofolio advertiser & ads scaling: Meta Ads skala besar (Rp200M spend/bln), Shopee Ads toko herbal & klien, Agency 7 Brand TikTok GMV Max, Dewanta Trans Travel, dan optimasi ROAS selective scaling.',
+  leader: 'Menampilkan bukti kepemimpinan tim CS: Rekapitulasi Laporan Harian Omzet Rp746 Juta (700-800M) dengan 3.612 closing, Dashboard evaluasi 5 staf CS, Whiteboard SOP time table, dan briefing strategi harian.',
+  cs: 'Menampilkan bukti performa Customer Service: Best Customer Service Performance Award 2024 (omzet Rp400M-600M, closing rate 87%), bukti chat apresiasi manajemen, transparansi redirect closing, dan kedisiplinan operasional.',
+  design: 'Menampilkan portofolio desain grafis komersial: Desain poster Premier League Matchday, branding Champions Borcelle FC, perayaan triple winner, promosi akademi sepakbola, dan materi kreatif iklan harian.'
 };
 
 function renderFilteredProjects(category) {
@@ -52,7 +56,9 @@ function renderFilteredProjects(category) {
 
   const projects = window.PORTFOLIO_DATA?.projects || [];
   
-  const filtered = projects.filter(p => p.category === category);
+  const filtered = (!category || category === 'all') 
+    ? projects 
+    : projects.filter(p => p.category === category);
 
   // Render Project Cards Grid
   grid.innerHTML = (filtered.length > 0 ? filtered : projects).map(p => {
